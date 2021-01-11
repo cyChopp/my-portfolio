@@ -1,0 +1,15 @@
+ul{
+    list-style: none;
+}
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 960px) {
+
+
+
+    }
