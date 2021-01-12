@@ -8,14 +8,14 @@ import { styled } from "@material-ui/core";
 const StyledSVGOne = styled(ImportedComponentOne)`
   display: block;
   margin: auto;
-  width: 25em;
-  height: 25em;
+  width: 50em;
+  height: 50em;
 `;
 const StyledSVGZero = styled(ImportedComponentZero)`
   display: block;
   margin: auto;
-  width: 25em;
-  height: 25em;
+  width: 50em;
+  height: 50em;
 `;
 
 const Feed = () => {
@@ -27,8 +27,7 @@ const Feed = () => {
                                                   <StyledSVGOne className=" objectAnimation one" />
                                                     <StyledSVGZero className="  two" />
                                                     <StyledSVGOne className=" objectAnimation three" />
-                                                    <StyledSVGZero className="  four" />
-                                                    <StyledSVGOne className="objectAnimation five" />
+                           
                                                   </div>
 
         <h1 className="text first" data-text="LOUTTCHENKO">

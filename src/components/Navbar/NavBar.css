@@ -41,7 +41,7 @@ a {
   color: #f1f1f1;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 949px) {
   .sidenav a {
     font-size: 58px;
     font-family: "Geo", sans-serif;
@@ -104,18 +104,4 @@ a {
 .homeIcons{
   position: relative;
 
-}
-.move-down{
-  animation: 3s ease 0s infinite alternate none running hcOrHU;
-}
-.move-up{
-  animation: 3s ease 0s infinite alternate none running dkMFLR;
-}
-
-.progress-icon {
-  position: fixed;
-  top: 15px;
-  left: 30px;
-  width: 40px;
-  height: 40px;
 }

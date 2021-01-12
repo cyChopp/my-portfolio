@@ -24,7 +24,7 @@ body {
 /* Start flash animation */
 
 .text {
-  font-size: 75px;
+  font-size: 95px;
   text-align: left;
   color: #222;
   margin-bottom: 60px;
@@ -97,7 +97,7 @@ body {
 /* Start glitch animation */
 
 h1 {
-  font-size: 75px;
+  font-size: 95px;
   color: #fff;
   font-style: italic;
 }
@@ -162,62 +162,6 @@ h1::after {
 
 /* End glitch animation */
 
-@media screen and (max-width: 950px) {
-  .text {
-    font-size: 55px;
-  }
-  h1 {
-    font-size: 55px;
-  }
-  h1::before {
-    font-size: 55px;
-  }
-  h1::after {
-    font-size: 55px;
-  }
-  .name {
-    padding-top: 100px;
-  }
-}
-
-@media screen and (max-width: 645px) {
-  .text {
-    font-size: 40px;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  h1::before {
-    font-size: 40px;
-  }
-  h1::after {
-    font-size: 40px;
-  }
-  .name {
-    padding-top: 70px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .text {
-    font-size: 30px;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  h1::before {
-    font-size: 30px;
-    left: calc(5% - 1.5px);
-  }
-  h1::after {
-    font-size: 30px;
-    left: calc(5% + 1.5px);
-  }
-  .name {
-    padding-top: 100px;
-    padding-left: 5%;
-  }
-}
 
 .one {
 }
@@ -249,6 +193,7 @@ h1::after {
   position: relative;
   left: 18vw;
   z-index: -10;
+  width: 300px;
 
 
 }
@@ -261,6 +206,203 @@ h1::after {
   }
   50% {
     bottom: 15px;
+  }
+}
+
+
+
+/*  -----  MEDIA  ----- */
+
+@media screen and (max-width: 1250px) {
+  .objectAnimation {
+    left: 25vw;
+    width: 220px;
+  }
+  .text {
+    font-size: 85px;
+  }
+  h1 {
+    font-size: 85px;
+  }
+  h1::before {
+    font-size: 85px;
+  }
+  h1::after {
+    font-size: 85px;
+  }
+  .name {
+    padding-top: 200px;
+  }
+  .two {
+    left: 25vw;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+  .objectTop {
+  top:180px    
+  }
+  
+  .text {
+    font-size: 65px;
+  }
+  h1 {
+    font-size: 65px;
+  }
+  h1::before {
+    font-size: 65px;
+  }
+  h1::after {
+    font-size: 65px;
+  }
+  .name {
+    padding-top: 200px;
+  }
+  .two {
+    left: 25vw;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .objectAnimation {
+    left: 30vw;
+    width: 150px;
+  }
+  .objectTop {
+  top:150px    
+  }
+  .text {
+    font-size: 65px;
+  }
+  h1 {
+    font-size: 65px;
+  }
+  h1::before {
+    font-size: 65px;
+    left: calc(5% - 1.5px);
+
+  }
+  h1::after {
+    font-size: 65px;
+    left: calc(5% - 1.5px);
+
+  }
+  .name {
+    padding-top: 180px;
+    padding-left: 5%;
+
+  }
+  .two {
+    left: 30vw;
+    position: relative;
+  }
+
+}
+
+@media screen and (max-width: 645px) {
+  .objectAnimation {
+    left: 30vw;
+    width: 150px;
+  }
+  .objectTop {
+  top:150px    
+  }
+  .text {
+    font-size: 50px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h1::before {
+    font-size: 50px;
+  }
+  h1::after {
+    font-size: 50px;
+  }
+  .name {
+    padding-top: 180px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .objectTop {
+    top:100px    
+    }
+  .text {
+    font-size: 45px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h1::before {
+    font-size: 45px;
+    left: calc(5% - 1.5px);
+  }
+  h1::after {
+    font-size: 45px;
+    left: calc(5% + 1.5px);
+  }
+  .name {
+    padding-top: 150px;
+    padding-left: 5%;
+  }
+}
+@media screen and (max-width: 375px ) {
+  .objectAnimation {
+    left: 30vw;
+    width: 80px;
+  }
+  .objectTop {
+    top:100px    
+    }
+  .text {
+    font-size: 35px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h1::before {
+    font-size: 35px;
+    left: calc(1% - 1.5px);
+  }
+  h1::after {
+    font-size: 35px;
+    left: calc(1% + 1.5px);
+  }
+  .name {
+    padding-top: 150px;
+    padding-left: 1%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .objectAnimation {
+    left: 30vw;
+    width: 80px;
+  }
+  .objectTop {
+    top:100px    
+    }
+  .text {
+    font-size: 35px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h1::before {
+    font-size: 35px;
+    left: calc(1% - 1.5px);
+  }
+  h1::after {
+    font-size: 35px;
+    left: calc(1% + 1.5px);
+  }
+  .name {
+    padding-top: 150px;
+    padding-left: 1%;
   }
 }
 
