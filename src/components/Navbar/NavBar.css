@@ -1,112 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geo:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geo:ital@1&display=swap");
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    background-color: #000;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    text-align: center;
+  height: 100%;
+  width: 0;
+  background-color: #000;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
-
+  color: #f1f1f1;
 }
 
 @media screen and (max-width: 950px) {
-    /* .sidenav {
-        padding-top: 15px;
-    } */
-    .sidenav a {
-        font-size: 58px;
-        font-family: 'Quantico', sans-serif;
+  .sidenav a {
+    font-size: 58px;
+    font-family: "Geo", sans-serif;
+  }
+  .sidenav a:hover {
+    color: #0affec;
+  }
+  .navIcon {
+    color: white;
+    float: right;
+    position: absolute;
 
-    }
-    .navIcon {
-        color: white;
-        float: right;
-        position: absolute;
-        
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-                padding-top: 8px;
-
-    }
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding-top: 8px;
+  }
 }
 
 .fixedNavbarWrapper {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 950px) {
-    .fixedNavbarWrapper {
-        display: flex;
-        width: 100%;
-        position: fixed;
-        top: 0%;
-        height: 60px;
-        background-color: #000;
-        z-index: 5;
-        /* box-shadow: 0px 0px 3px 0px #0affec; */
-    }
-    .grow {
-        flex-grow: 1;
-    }
-    .navbarLinks {
-        padding-top: 20px;
-        flex-grow: 1;
-    }
-    .navbarLinks ul {
-        display: flex;
-        justify-content: space-between;
-    }
-    .navbarLinks ul li {
-        list-style: none;
-        
-    }
-    .navbarLinks li:hover{
-        transform: scale(1.3);
-  transition: all ease-in 0.2s;
-  transition: all ease-out 0.2s;
+  .fixedNavbarWrapper {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    height: 60px;
+    background-color: #000;
+    z-index: 5;
+  }
+  .grow {
+    flex-grow: 1;
+  }
+  .navbarLinks {
+    padding-top: 20px;
+    flex-grow: 1;
+  }
+  .navbarLinks ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbarLinks ul li {
+    list-style: none;
+  }
+  .navbarLinks li:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.1s;
+  }
+  .navbarLinks ul li a {
+    color: white;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: "Geo", sans-serif;
+  }
+}
 
-    }
-    .navbarLinks ul li a {
-        color: white;
-        justify-content: space-between;
-        font-size: 20px;
-        /* font-family: 'Quantico', sans-serif; */
-        font-family: 'Geo', sans-serif;
+.homeIcons{
+  position: relative;
 
+}
+.move-down{
+  animation: 3s ease 0s infinite alternate none running hcOrHU;
+}
+.move-up{
+  animation: 3s ease 0s infinite alternate none running dkMFLR;
+}
 
-    }
+.progress-icon {
+  position: fixed;
+  top: 15px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
 }
