@@ -15,6 +15,7 @@ body {
   font-family: "Bungee Shade", cursive;
   padding-top: 200px;
   padding-left: 15%;
+  height: 100vh;
 }
 
 .firstname {
@@ -24,7 +25,7 @@ body {
 /* Start flash animation */
 
 .text {
-  font-size: 95px;
+  font-size: 8em;
   text-align: left;
   color: #222;
   margin-bottom: 60px;

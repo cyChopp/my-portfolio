@@ -1,0 +1,25 @@
+.projects_anchorWrapper{
+  padding-top: 100px;
+
+}
+
+.projects_titleWrapper{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.projects_anchorTitle{
+color:#0affec;
+font-size: 100px;
+font-family: 'Geo';
+}
+
+.projects_wrapper {
+  display: flex;
+  flex-wrap: wrap ;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-basis: 100%;
+  padding-top: 100px;
+
+}

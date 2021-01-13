@@ -62,8 +62,9 @@ a {
 }
 
 .fixedNavbarWrapper {
-  display: none;
+  /* display: none; */
 }
+
 
 @media screen and (min-width: 950px) {
   .fixedNavbarWrapper {
@@ -96,7 +97,7 @@ a {
   .navbarLinks ul li a {
     color: white;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 1.5em;
     font-family: "Geo", sans-serif;
   }
 }
@@ -104,4 +105,9 @@ a {
 .homeIcons{
   position: relative;
 
+}
+.progress-icon{
+}
+.active {
+  border-bottom: 1px solid white;
 }

@@ -7,6 +7,7 @@ import {
   useTransform,
   useViewportScroll,
 } from "framer-motion";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [isComplete, setIsComplete] = useState(false);
@@ -30,8 +31,6 @@ const NavBar = () => {
     <>
       <div className="fixedNavbarWrapper">
         <div className="pathLength">
-          <>
-            {/* <Feed /> */}
             <svg className="progress-icon" viewBox="0 0 60 60">
               <motion.path
                 fill="none"
@@ -57,22 +56,29 @@ const NavBar = () => {
                 animate={{ pathLength: isComplete ? 1 : 0 }}
               />
             </svg>
-          </>
         </div>
         <div className="grow" />
         <div className="navbarLinks">
           <ul>
             <li>
-              <a href="#">PROJECTS</a>
+            <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} >SKILLS</Link>
+
+              {/* <a href="#">SKILLS</a> */}
             </li>
             <li>
-              <a href="#">SKILLS</a>
+            <Link activeClass="active" to="projects" spy={true} smooth={true} duration={1000} >PROJECTS</Link>
+
+              {/* <a href="#">PROJECTS</a> */}
             </li>
             <li>
-              <a href="#">EXPERIENCE</a>
+            <Link activeClass="active" to="experience" spy={true} smooth={true} duration={1000} >EXPERIENCE</Link>
+
+              {/* <a href="#">EXPERIENCE</a> */}
             </li>
             <li>
-              <a href="#">CONTACT ME</a>
+            <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000} >CONTACT</Link>
+
+              {/* <a href="#">CONTACT ME</a> */}
             </li>
           </ul>
         </div>

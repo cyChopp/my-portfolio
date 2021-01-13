@@ -1,0 +1,19 @@
+.skill_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    padding:40px 70px
+}
+.skill_image{
+    width: 150px;
+    height: 150px;
+}
+.skill_title{
+
+    font-size: 25px;
+    font-family: 'Geo';
+    color:#0affec;
+    padding-top:30px
+}
