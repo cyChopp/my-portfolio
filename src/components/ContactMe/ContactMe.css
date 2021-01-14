@@ -9,3 +9,67 @@
     font-family: 'Geo' !important;
     padding-bottom: 50px;
 }
+.contact_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.contact_formWrapper{
+}
+.contact_infoWrapper{
+    font-size: 40px;
+    padding: 100px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+
+}
+.contact_info{
+    width: 100%;
+    color: #fff;
+
+}
+.contact_svg{
+    padding-left: 30px;
+    width: 50px;
+    height: 50px;
+    fill:#fff;
+    cursor: pointer;
+    align-items: center;
+}
+.contact_svg:hover{
+
+    fill:rgba(255, 255, 255, 0.604);
+
+}
+.contact_infoSvg{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact_svgWrapper{
+    display: flex;
+    align-items: center;
+}
+.contact_email{
+    font-size: 25px;
+    overflow-x: visible;
+}
+.contact_cv{
+    color:#fff;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+.contact_cv :hover{
+    color:rgba(255, 255, 255, 0.582);
+    
+}
+.contact_cv a{
+    color:#fff;
+}

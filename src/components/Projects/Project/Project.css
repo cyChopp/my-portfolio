@@ -14,7 +14,7 @@ margin: 25px;
     box-shadow: 1px 1px 30px #0affea;
 }
 .project_root a{
-    cursor: default !important;
+    /* cursor: default !important; */
 }
 .project_cart{
     margin:0px 10px !important;
@@ -23,6 +23,7 @@ margin: 25px;
     font-size: 25px !important;
     cursor: default !important;
     text-align: center;
+    cursor: pointer;
 }
 .project_title{
     font-size: 40px !important;
