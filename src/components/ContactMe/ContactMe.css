@@ -1,9 +1,13 @@
-
+.contactme_wrapper{
+    height: 100vh;
+}
 .contact_inputLabel p {
     color: #0effea !important;
 }
 
 .contact_title {
+    padding-top: 100px;
+
     display: flex;
     justify-content: center;
     font-size: 70px !important;
@@ -17,7 +21,7 @@
 }
 
 .contact_wrapper {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

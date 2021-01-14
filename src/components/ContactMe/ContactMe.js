@@ -120,7 +120,7 @@ const ContactMe = () => {
     margin: auto;
   `;
   return (
-    <>
+    <div className='contactme_wrapper'>
       <div className="contact_title" id="contact">
         <p >Contact me</p>
       </div>
@@ -195,7 +195,7 @@ const ContactMe = () => {
             <div className="contact_infoSvg">
               <div>LinkedIn :</div>
               <div className="contact_svgWrapper">
-                <a target="_blank" href="https://github.com/cyChopp">
+                <a target="_blank" href="https://www.linkedin.com/in/alexander-louttchenko-468778202/">
                   {" "}
                   <StyledSVGLinkedin className="contact_svg" />
                 </a>
@@ -225,7 +225,7 @@ const ContactMe = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -11,21 +11,21 @@ import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
 import ContactMe from "./components/ContactMe/ContactMe";
 
+import { ParallaxProvider } from 'react-scroll-parallax';
+
+
 
 function App() {
 
   return (
-    <>
+    <ParallaxProvider>
       <NavBar />
       <Feed />
       <Skills/>
       <Projects/>
       <Experience/>
       <ContactMe/>
-      
-
-      
-    </>
+    </ParallaxProvider>
   );
 }
 
