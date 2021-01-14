@@ -16,8 +16,7 @@ import {
 
 import { ReactComponent as GithubSVG } from "../../icons/github.svg";
 import { ReactComponent as LinkedinSVG } from "../../icons/linkedIn.svg";
-import AlexanderLouttchenkoCV from '../../icons/AlexanderLouttchenkoCV.pdf'
-
+import AlexanderLouttchenkoCV from "../../icons/AlexanderLouttchenkoCV.pdf";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -33,13 +32,11 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
-  },
-  textField: {
-    root: {
-      "&.MuiInputBase-root": {
-        color: "red",
-      },
-    },
+    backgroundColor: "#0effea",
+    height: "50px",
+    fontWeight: "600",
+    fontSize: "27px",
+    fontFamily: "Geo",
   },
 }));
 
@@ -59,6 +56,7 @@ const ValidationTextField = withStyles({
         borderColor: "#0effea",
       },
     },
+
     "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
       borderColor: "#0effea",
     },
@@ -114,124 +112,120 @@ const ContactMe = () => {
     e.target.reset();
   };
   const StyledSVGLinkedin = styled(LinkedinSVG)`
-  display: block;
-  margin: auto;
-`;
-const StyledSVGGithub = styled(GithubSVG)`
-display: block;
-margin: auto;
-`;
+    display: block;
+    margin: auto;
+  `;
+  const StyledSVGGithub = styled(GithubSVG)`
+    display: block;
+    margin: auto;
+  `;
   return (
-    <div className="contact_wrapper">
-      <div className="contact_formWrapper">
-        <Container component="main" maxWidth="sm" id="contact">
-          <div className={classes.paper}>
-            <Typography component="h1" variant="h5" className="contace_title">
-              Contact me
-            </Typography>
-            <form className={classes.form} onSubmit={sendEmail}>
-              <Grid container spacing={4}>
-                <Grid item xs={12}>
-                  <ValidationTextField
-                    variant="outlined"
-                    autoComplete="fname"
-                    name="name"
-                    required
-                    fullWidth
-                    id="firstName"
-                    label="First Name"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <ValidationTextField
-                    variant="outlined"
-                    required
-                    fullWidth
-                    id="subject"
-                    label="Subject"
-                    name="subject"
-                    autoComplete="lname"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <ValidationTextField
-                    variant="outlined"
-                    required
-                    fullWidth
-                    id="email"
-                    label="Email"
-                    name="email"
-                    autoComplete="email"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <ValidationTextField
-                    multiline
-                    rows={4}
-                    variant="outlined"
-                    required
-                    fullWidth
-                    name="message"
-                    label="Message"
-                    type="textarea"
-                    id="password"
-                    autoComplete="current-password"
-                  />
-                </Grid>
-              </Grid>
-              <ModefiedButton
-                type="submit"
-                fullWidth
-                variant="contained"
-                color="primary"
-                className={classes.submit}
-              >
-                Send
-              </ModefiedButton>
-            </form>
-          </div>
-        </Container>
+    <>
+      <div className="contact_title" id="contact">
+        <p >Contact me</p>
       </div>
-      <div className="contact_infoWrapper">
-        <div className="contact_info">
-          <div className='contact_infoSvg'>
-            <div>
-              LinkedIn :
+      <div className="contact_wrapper">
+        <div className="contact_formWrapper">
+          <Container component="main" maxWidth="sm" >
+            <div className={classes.paper}>
+              <form className={classes.form} onSubmit={sendEmail}>
+                <Grid container spacing={4}>
+                  <Grid item xs={12}>
+                    <ValidationTextField
+                      variant="outlined"
+                      autoComplete="fname"
+                      name="name"
+                      required
+                      fullWidth
+                      id="firstName"
+                      label="First Name"
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <ValidationTextField
+                      variant="outlined"
+                      required
+                      fullWidth
+                      id="subject"
+                      label="Subject"
+                      name="subject"
+                      autoComplete="lname"
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <ValidationTextField
+                      variant="outlined"
+                      required
+                      fullWidth
+                      id="email"
+                      label="Email"
+                      name="email"
+                      autoComplete="email"
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <ValidationTextField
+                      multiline
+                      rows={4}
+                      variant="outlined"
+                      required
+                      fullWidth
+                      name="message"
+                      label="Message"
+                      type="textarea"
+                      id="password"
+                      autoComplete="current-password"
+                    />
+                  </Grid>
+                </Grid>
+                <ModefiedButton
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  className={classes.submit}
+                >
+                  Send
+                </ModefiedButton>
+              </form>
             </div>
-            <div className='contact_svgWrapper'>
-            <StyledSVGLinkedin className='contact_svg'/>
+          </Container>
+        </div>
+        <div className="contact_infoWrapper">
+          <div className="contact_info">
+            <div className="contact_infoSvg">
+              <div>LinkedIn :</div>
+              <div className="contact_svgWrapper">
+                <a target="_blank" href="https://github.com/cyChopp">
+                  {" "}
+                  <StyledSVGLinkedin className="contact_svg" />
+                </a>
+              </div>
+            </div>
+            <div className="contact_infoSvg">
+              <div>GitHub :</div>
+              <div className="contact_svgWrapper">
+                <a target="_blank" href="https://github.com/cyChopp">
+                  {" "}
+                  <StyledSVGGithub className="contact_svg" />
+                </a>
+              </div>
+            </div>
+            <div className="contact_infoSvg">
+              <div>Email :</div>
+              <div className="contact_email">louttchenkoo@gmail.com</div>
+            </div>
+            <div className="contact_infoSvg">
+              <div>CV :</div>
+              <div className="contact_cv">
+                <a href={AlexanderLouttchenkoCV} download="LouttchenkoCV.pdf">
+                  Download CV
+                </a>
+              </div>
             </div>
           </div>
-          <div className='contact_infoSvg'>
-          <div>
-              GitHub :
-            </div>
-            <div className='contact_svgWrapper'>
-            <StyledSVGGithub className='contact_svg'/>
-            </div>
-
-          </div>
-          <div className='contact_infoSvg'>
-          <div>
-              Email :
-            </div>
-            <div className='contact_email'>
-            louttchenkoo@gmail.com
-            </div>
-          </div>
-          <div className='contact_infoSvg'>
-          <div>
-              CV :
-            </div>
-            <div className='contact_cv'>
-            <a href={AlexanderLouttchenkoCV} download='LouttchenkoCV.pdf' >Download CV</a>
-            </div>
-          </div>
-
-          
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

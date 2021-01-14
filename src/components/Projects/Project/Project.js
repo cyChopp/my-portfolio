@@ -19,17 +19,13 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexWrap: "wrap",
     "& > *": {
-      margin: theme.spacing(1.2)
-    }
-  }
-
+      margin: theme.spacing(1.2),
+    },
+  },
 }));
 
-const Project = ({ title, link ,code, image,technologies }) => {
+const Project = ({ title, link, code, image, technologies }) => {
   const classes = useStyles();
-
-
-  console.log(technologies,'tech')
 
   return (
     <div className="project_rootWrapper">
@@ -49,21 +45,24 @@ const Project = ({ title, link ,code, image,technologies }) => {
             >
               {title}
             </Typography>
-        
+
             <div className={classes.root}>
-            {technologies.map(tech=>(
-              <Chip label={tech} className='project_chipStyle'/>
-            ))}
+              {technologies.map((tech) => (
+                <Chip label={tech} className="project_chipStyle" />
+              ))}
             </div>
           </CardContent>
         </CardActionArea>
         <CardActions className="project_buttons">
           <Button size="small" color="primary" className="project_cart">
-            <a target='_blank' href={link}>Live version</a>
+            <a target="_blank" href={link}>
+              Live version
+            </a>
           </Button>
           <Button size="small" color="primary" className="project_cart">
-          <a target='_blank' href={code}>Code</a>
-
+            <a target="_blank" href={code}>
+              Code
+            </a>
           </Button>
         </CardActions>
       </Card>
