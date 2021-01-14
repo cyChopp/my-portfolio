@@ -9,6 +9,7 @@ import { useState } from "react";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
+import ContactMe from "./components/ContactMe/ContactMe";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Skills/>
       <Projects/>
       <Experience/>
+      <ContactMe/>
       
 
       
