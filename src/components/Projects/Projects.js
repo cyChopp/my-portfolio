@@ -17,9 +17,9 @@ const Projects = () => {
         <p className="projects_anchorTitle">Projects</p>
       </div>
       <div className="projects_wrapper">
-        <Project title="Social-network" image={social} />
-        <Project title="Online-shop" image={shop} />
-        <Project title="Galaxy-todo" onClick={MyComponent} image={todo} />
+        <Project title="Social-network" link={'https://breeab-3218f.firebaseapp.com/signin'} code={'https://github.com/cyChopp/Breeab'} image={social} technologies={['React','React-Redux','Hooks','Hocs','Firebase','Flux','Material Ui',]} />
+        <Project title="E-commerce shop" link={'https://online-shop-3cfcd.web.app/'} code={'https://github.com/cyChopp/online-shop'} image={shop} technologies={['React','React Context','Hooks','Commerce.js','Material Ui']}/>
+        <Project title="Galaxy-todo" link={'https://galaxy-todo.web.app/'} code={'https://github.com/cyChopp/another-one'} onClick={MyComponent} image={todo} technologies={['React','Context','Hooks','Reducers','Firebase']}/>
       </div>
     </div>
   );

@@ -10,6 +10,9 @@ body {
   background-color: #000;
   height: 5000px;
 }
+.feed_wrapper{
+  height: 100vh;
+}
 
 .name {
   font-family: "Bungee Shade", cursive;
@@ -39,6 +42,17 @@ body {
 
 .text.on {
   animation: flashOn 0.5s forwards;
+}
+.feed_role{
+  color: #0affec;
+  font-size: 40px;
+  font-family: 'Geo';
+  margin: auto;
+  width: 35%;
+  font-weight: 100;
+  font-style: italic;
+
+
 }
 
 @keyframes flash {

@@ -1,0 +1,27 @@
+.experience_wrapper{
+    padding: 120px 100px 0px 50px;
+    
+    height: 100vh;
+    font-size: 30px;
+    color: #0effea;
+}
+.experience_titleWrapper{
+    /* padding-top: 100px; */
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.experience_anchorTitle{
+    color:#0effea;
+    font-size: 70px;
+}
+.experience_paragraph{
+    padding: 30px 20px;
+}
+.experience_title{
+    color:#fafafa;
+    font-size: 50px;
+    padding-bottom:30px ;
+}

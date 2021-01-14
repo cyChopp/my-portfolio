@@ -21,7 +21,7 @@ const StyledSVGZero = styled(ImportedComponentZero)`
 
 const Feed = () => {
   return (
-    <>
+    <div className="feed_wrapper">
       <div className="name" >
         <h1 className="firstname">ALEX </h1>{" "}
         <div className="objectTop">
@@ -32,9 +32,12 @@ const Feed = () => {
         <h1 className="text first" data-text="LOUTTCHENKO">
           LOUTTCHENKO
         </h1>
+        <p className='feed_role' >Web Developer</p>
+
       </div>
+
       <div className='icon-scroll'></div>
-    </>
+    </div>
   );
 };
 

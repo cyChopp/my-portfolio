@@ -76,7 +76,7 @@ const NavBar = () => {
               {/* <a href="#">EXPERIENCE</a> */}
             </li>
             <li>
-            <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000} >CONTACT</Link>
+            <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000} > CV / CONTACT ME</Link>
 
               {/* <a href="#">CONTACT ME</a> */}
             </li>
@@ -108,7 +108,7 @@ const NavBar = () => {
 
           <li>
             <a href="#" onClick={closeNav}>
-              CONTACT ME
+            CV / CONTACT ME
             </a>
           </li>
         </ul>
