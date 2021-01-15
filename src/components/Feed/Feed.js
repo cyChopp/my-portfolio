@@ -35,7 +35,6 @@ const Feed = () => {
         <p className='feed_role' >Web Developer</p>
 
       </div>
-
       <div className='icon-scroll'></div>
     </div>
   );

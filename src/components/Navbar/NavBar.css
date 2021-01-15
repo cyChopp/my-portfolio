@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Geo:ital@1&display=swap");
-
 a {
   text-decoration: none;
 }
@@ -53,18 +49,12 @@ a {
     color: white;
     float: right;
     position: absolute;
-
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
     padding-top: 8px;
   }
 }
-
-.fixedNavbarWrapper {
-  /* display: none; */
-}
-
 
 @media screen and (min-width: 950px) {
   .fixedNavbarWrapper {
@@ -102,15 +92,16 @@ a {
   }
 }
 
-.homeIcons{
+.homeIcons {
   position: relative;
-
 }
-.progress-icon{
+
+.progress-icon {
   height: 40px;
   width: 40px;
   padding: 20px 0px 0px 20px;
 }
+
 .active {
   border-bottom: 1px solid white;
 }
