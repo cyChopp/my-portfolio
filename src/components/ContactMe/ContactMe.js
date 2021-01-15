@@ -16,7 +16,7 @@ import {
 
 import { ReactComponent as GithubSVG } from "../../icons/github.svg";
 import { ReactComponent as LinkedinSVG } from "../../icons/linkedIn.svg";
-import AlexanderLouttchenkoCV from "../../icons/AlexanderLouttchenkoCV.pdf";
+import louttchenkoCV from "../../icons/louttchenkoCV.pdf";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -125,6 +125,41 @@ const ContactMe = () => {
         <p >Contact me</p>
       </div>
       <div className="contact_wrapper">
+                
+      <div className="contact_infoWrapper">
+          <div className="contact_info">
+            <div className="contact_infoSvg">
+              <div>LinkedIn :</div>
+              <div className="contact_svgWrapper">
+                <a target="_blank" href="https://www.linkedin.com/in/alexander-louttchenko-468778202/">
+                  {" "}
+                  <StyledSVGLinkedin className="contact_svg" />
+                </a>
+              </div>
+            </div>
+            <div className="contact_infoSvg">
+              <div>GitHub :</div>
+              <div className="contact_svgWrapper">
+                <a target="_blank" href="https://github.com/cyChopp">
+                  {" "}
+                  <StyledSVGGithub className="contact_svg" />
+                </a>
+              </div>
+            </div>
+            <div className="contact_infoSvg">
+              <div>Email :</div>
+              <div className="contact_email">louttchenkoo@gmail.com</div>
+            </div>
+            <div className="contact_infoSvg">
+              <div>CV :</div>
+              <div className="contact_cv">
+                <a href={louttchenkoCV} download="louttchenkoCV.pdf">
+                  Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="contact_formWrapper">
           <Container component="main" maxWidth="sm" >
             <div className={classes.paper}>
@@ -191,41 +226,7 @@ const ContactMe = () => {
           </Container>
         </div>
 
-        
-        <div className="contact_infoWrapper">
-          <div className="contact_info">
-            <div className="contact_infoSvg">
-              <div>LinkedIn :</div>
-              <div className="contact_svgWrapper">
-                <a target="_blank" href="https://www.linkedin.com/in/alexander-louttchenko-468778202/">
-                  {" "}
-                  <StyledSVGLinkedin className="contact_svg" />
-                </a>
-              </div>
-            </div>
-            <div className="contact_infoSvg">
-              <div>GitHub :</div>
-              <div className="contact_svgWrapper">
-                <a target="_blank" href="https://github.com/cyChopp">
-                  {" "}
-                  <StyledSVGGithub className="contact_svg" />
-                </a>
-              </div>
-            </div>
-            <div className="contact_infoSvg">
-              <div>Email :</div>
-              <div className="contact_email">louttchenkoo@gmail.com</div>
-            </div>
-            <div className="contact_infoSvg">
-              <div>CV :</div>
-              <div className="contact_cv">
-                <a href={AlexanderLouttchenkoCV} download="LouttchenkoCV.pdf">
-                  Download CV
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   );

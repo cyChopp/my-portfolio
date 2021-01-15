@@ -260,6 +260,26 @@ h1::after {
 
 }
 
+@media screen and (max-width: 3440px) {
+
+  h1::before {
+    font-size: 130px;
+    left: calc(30.8% - 1.5px);
+    
+
+  }
+  h1::after {
+    font-size: 130px;
+    left: calc(30.8% + 1.5px);
+
+  }
+  .name {
+    padding-top: 330px;
+    padding-left:15.8%;
+  }
+
+}
+
 @media screen and (max-width: 2560px) {
   .feed_role{
     width: 23%;
