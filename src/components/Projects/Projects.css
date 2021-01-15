@@ -23,3 +23,15 @@ font-family: 'Geo';
   padding-top: 100px;
 
 }
+@media screen and (max-width: 540) {
+  .projects_anchorWrapper{
+   padding-top: 500px;
+  }
+  
+
+}
+@media screen and (max-width: 3440px) {
+  .projects_anchorWrapper{
+      padding-bottom: 400px;
+  }
+}

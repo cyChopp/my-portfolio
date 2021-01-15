@@ -1,19 +1,46 @@
 a {
   text-decoration: none;
 }
+.navbar_wrapper{
+  /* max-width: 1920px; */
 
+}
+
+.fixedNavbarWrapper{
+  max-width: 1920px;
+
+}
 .sidenav {
   height: 100%;
   width: 0;
   background-color: #000;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   right: 0;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   text-align: center;
+}
+.navbar_sidebar {
+  height:80%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.navbar_sidebar ul{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+
+  
+}
+
+.navbar_sidebar ul li a{
+  font-size: 50px;
 }
 
 .sidenav a {
@@ -24,10 +51,17 @@ a {
   display: block;
   transition: 0.3s;
 }
+.navbar_hamburger{
+  /* float: right !important; */
 
+}
+.navbar_closebtn{
+  position: fixed;
+}
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
+  padding:0px;
+  top: 10px;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
@@ -38,25 +72,23 @@ a {
 }
 
 @media screen and (max-width: 949px) {
-  .sidenav a {
-    font-size: 58px;
-    font-family: "Geo", sans-serif;
-  }
-  .sidenav a:hover {
-    color: #0affec;
+  .fixedNavbarWrapper {
+    display: none;
   }
   .navIcon {
     color: white;
     float: right;
-    position: absolute;
+    position: fixed;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
     padding-top: 8px;
   }
+  
 }
 
 @media screen and (min-width: 950px) {
+  
   .fixedNavbarWrapper {
     display: flex;
     width: 100%;
@@ -87,7 +119,7 @@ a {
   .navbarLinks ul li a {
     color: white;
     justify-content: space-between;
-    font-size: 1.5em;
+    font-size: 20px;
     font-family: "Geo", sans-serif;
   }
 }

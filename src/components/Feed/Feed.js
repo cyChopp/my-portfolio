@@ -32,7 +32,10 @@ const Feed = () => {
         <h1 className="text first" data-text="LOUTTCHENKO">
           LOUTTCHENKO
         </h1>
-        <p className='feed_role' >Web Developer</p>
+        <div className='feed_role'>
+        <p >Web Developer</p>
+
+        </div>
 
       </div>
       <div className='icon-scroll'></div>

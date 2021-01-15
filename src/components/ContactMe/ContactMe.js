@@ -120,8 +120,8 @@ const ContactMe = () => {
     margin: auto;
   `;
   return (
-    <div className='contactme_wrapper'>
-      <div className="contact_title" id="contact">
+    <div className='contactme_wrapper' id="contact">
+      <div className="contact_title" >
         <p >Contact me</p>
       </div>
       <div className="contact_wrapper">
@@ -190,6 +190,8 @@ const ContactMe = () => {
             </div>
           </Container>
         </div>
+
+        
         <div className="contact_infoWrapper">
           <div className="contact_info">
             <div className="contact_infoSvg">

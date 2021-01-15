@@ -10,11 +10,12 @@ WebFont.load({
   google: {
     families: ['Geo', 'Bungee Shade']
   }
+
 });
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App className='_index'/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -46,3 +46,10 @@
     color: rgb(121, 121, 121);
     border-radius: 0px !important;
 }
+@media screen and (max-width: 414px) {
+    .project_rootWrapper{
+     padding-bottom: 50px;
+    }
+    
+
+}

@@ -4,9 +4,12 @@
 height: 100vh;
 }
 .skills_wrapper{
+    max-width: 2000px;
     display: flex;
     flex-wrap: wrap ;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     /* padding-bottom: 100px; */
 }
 .skills_titleWrapper{
@@ -19,5 +22,19 @@ height: 100vh;
     color:#0affec;
     font-size: 100px;
     font-family: 'Geo';
+
+}
+@media screen and (max-width: 3440px) {
+    #skills{
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+    }
+}
+@media screen and (max-width: 414px) {
+    #skills{
+     padding-bottom: 500px;
+    }
+    
 
 }

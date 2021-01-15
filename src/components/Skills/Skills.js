@@ -16,9 +16,10 @@ import { Parallax } from 'react-scroll-parallax';
 
 const Skills = () => {
     return (
+        <div  id='skills' >
         <Parallax className="custom-class" y={[-10, 10]} tagOuter="figure">
 
-        <div className="skills_mainWrapper"  id='skills'>
+        <div className="skills_mainWrapper" >
         <div className='skills_titleWrapper'>
             <p className='skills_title'>Skills</p>
         </div>
@@ -34,6 +35,7 @@ const Skills = () => {
         </div>
         </div>
         </Parallax>
+        </div>
     )
 }
 

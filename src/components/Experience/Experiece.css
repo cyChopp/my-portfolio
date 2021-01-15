@@ -25,3 +25,31 @@
     font-size: 50px;
     padding-bottom:30px ;
 }
+@media screen and (max-width: 540px) {
+    .experience_anchorTitle{
+        font-size: 45px;
+    }
+
+    .experience_wrapper{
+        font-size: 20px;
+    }
+    .experience_title{
+        font-size: 35px;
+
+    }
+
+}
+@media screen and (max-width: 414px) {
+    .experience_anchorTitle{
+        font-size: 45px;
+    }
+
+    .experience_wrapper{
+        font-size: 20px;
+    }
+    .experience_title{
+        font-size: 35px;
+
+    }
+
+}

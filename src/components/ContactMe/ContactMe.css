@@ -90,3 +90,14 @@
 .contact_cv a {
     color: #fff;
 }
+@media screen and (max-width: 3440px) {
+    .contactme_wrapper{
+        padding-top: 100px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .contactme_wrapper{
+        padding-top: 750px;
+    }
+
+}

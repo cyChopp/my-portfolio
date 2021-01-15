@@ -15,7 +15,10 @@ const NavBar = () => {
   const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
   const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
 
-  useEffect(() => yRange.onChange((v) => setIsComplete(v >= 1)), [yRange]);
+  useEffect(() =>{
+     yRange.onChange((v) => setIsComplete(v >= 1))
+
+    }, [yRange]);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -27,8 +30,9 @@ const NavBar = () => {
   const closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
   };
+
   return (
-    <>
+    <div className='navbar_wrapper'>
       <div className="fixedNavbarWrapper">
         <div className="pathLength">
           <svg className="progress-icon" viewBox="0 0 60 60">
@@ -61,6 +65,7 @@ const NavBar = () => {
         <div className="navbarLinks">
           <ul>
             <li>
+              
               <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} >SKILLS</Link>
             </li>
             <li>
@@ -78,9 +83,10 @@ const NavBar = () => {
       </div>
 
       <div id="mySidenav" className="sidenav">
-        <a href="#" onClick={closeNav} className="closebtn ">
-          <MenuIcon />
-        </a>
+        <div href="#" >
+          <MenuIcon  onClick={closeNav} className="closebtn "/>
+        </div>
+        <div className='navbar_sidebar'>
         <ul>
           <li>
             <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} onClick={closeNav}>SKILLS</Link>
@@ -95,9 +101,12 @@ const NavBar = () => {
             <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} onClick={closeNav}>CV / CONTACT ME</Link>
           </li>
         </ul>
+        </div>
       </div>
-      <MenuIcon onClick={openNav} className="navIcon" />
-    </>
+      <div className="navIcon"  onClick={openNav} >
+      <MenuIcon style={{float:'right',padding:'10px'}} />
+      </div>
+    </div>
   );
 };
 
