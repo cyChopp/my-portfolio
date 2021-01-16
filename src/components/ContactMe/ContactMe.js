@@ -14,6 +14,8 @@ import {
   withStyles,
 } from "@material-ui/core";
 
+import { Parallax } from "react-scroll-parallax";
+
 import { ReactComponent as GithubSVG } from "../../icons/github.svg";
 import { ReactComponent as LinkedinSVG } from "../../icons/linkedIn.svg";
 import louttchenkoCV from "../../icons/louttchenkoCV.pdf";
@@ -120,18 +122,20 @@ const ContactMe = () => {
     margin: auto;
   `;
   return (
-    <div className='contactme_wrapper' id="contact">
-      <div className="contact_title" >
-        <p >Contact me</p>
+    <div id="contact" className="contactme_wrapper">
+      <div className="contact_title">
+        <p>Contact me</p>
       </div>
       <div className="contact_wrapper">
-                
-      <div className="contact_infoWrapper">
+        <div className="contact_infoWrapper">
           <div className="contact_info">
             <div className="contact_infoSvg">
               <div>LinkedIn :</div>
               <div className="contact_svgWrapper">
-                <a target="_blank" href="https://www.linkedin.com/in/alexander-louttchenko-468778202/">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/alexander-louttchenko-468778202/"
+                >
                   {" "}
                   <StyledSVGLinkedin className="contact_svg" />
                 </a>
@@ -161,7 +165,7 @@ const ContactMe = () => {
           </div>
         </div>
         <div className="contact_formWrapper">
-          <Container component="main" maxWidth="sm" >
+          <Container component="main" maxWidth="sm">
             <div className={classes.paper}>
               <form className={classes.form} onSubmit={sendEmail}>
                 <Grid container spacing={4}>
@@ -225,8 +229,6 @@ const ContactMe = () => {
             </div>
           </Container>
         </div>
-
-
       </div>
     </div>
   );

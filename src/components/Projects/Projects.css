@@ -1,37 +1,73 @@
-.projects_anchorWrapper{
+.projects_anchorWrapper {
   padding-top: 100px;
-
 }
 
-.projects_titleWrapper{
+.projects_titleWrapper {
   display: flex;
   text-align: center;
   justify-content: center;
 }
-.projects_anchorTitle{
-color:#0affec;
-font-size: 100px;
-font-family: 'Geo';
+.projects_anchorTitle {
+  color: #0affec;
+  font-size: 100px;
+  font-family: "Geo";
 }
 
 .projects_wrapper {
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   flex-basis: 100%;
   padding-top: 100px;
-
 }
-@media screen and (max-width: 540) {
-  .projects_anchorWrapper{
-   padding-top: 500px;
+@media (min-width: 360px) {
+  .projects_anchorWrapper {
+    padding-top: 200px;
   }
-  
+  .projects_anchorTitle {
+    font-size: 4em;
+  }
 
 }
-@media screen and (max-width: 3440px) {
+@media (min-width: 768px) { 
+  .projects_anchorWrapper {
+    padding-top: 0px;
+  }
+  .projects_anchorTitle {
+    font-size: 5em;
+  }
+
+}
+@media (min-width: 992px) { 
+  .projects_anchorWrapper {
+    padding-top: 100px;
+  }
+  .projects_anchorTitle {
+    font-size: 5em;
+  }
+}
+@media (min-width: 1280px) { 
+  .projects_anchorTitle {
+    padding-bottom: 50px;
+  }
+
+}
+@media (min-width: 1920px) { 
+  .projects_anchorWrapper {
+    padding-top: 100px;
+  }
+  .projects_anchorTitle {
+    font-size: 7em;
+  }
+
+ }
+ @media (min-width: 3840px) {
+
+  .projects_wrapper{
+    padding-top: 300px;
+  }
   .projects_anchorWrapper{
-      padding-bottom: 400px;
+    padding-bottom: 600px;
   }
 }

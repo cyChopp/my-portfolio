@@ -1,55 +1,87 @@
-.experience_wrapper{
-    padding: 120px 100px 0px 50px;
-    
-    height: 100vh;
-    font-size: 30px;
-    color: #0effea;
+.experience_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 100px 0px 50px;
+
+  height: 100vh;
+  font-size: 30px;
+  color: #0effea;
 }
-.experience_titleWrapper{
-    /* padding-top: 100px; */
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
+.experience_titleWrapper {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.experience_anchorTitle {
+  color: #0effea;
+  font-size: 70px;
+}
+.experience_paragraph {
+  padding: 30px 20px;
+}
+.experience_title {
+  color: #fafafa;
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 360px) {
+  .experience_wrapper {
+    padding: 80px 30px 0px 10px;
+  }
+  .experience_titleWrapper {
     text-align: center;
-
+  }
+  .experience_anchorTitle {
+    font-size: 2em;
+  }
+  .experience_paragraph {
+    padding: 30px 10px;
+    text-align: center;
+  }
 }
-.experience_anchorTitle{
-    color:#0effea;
-    font-size: 70px;
+@media (min-width: 768px) {
+  .experience_wrapper {
+    padding-top: 250px;
+  }
+  .experience_anchorTitle {
+    font-size: 3em;
+  }
 }
-.experience_paragraph{
-    padding: 30px 20px;
+
+@media (min-width: 992px) {
+  .experience_wrapper {
+    padding-top: 100px;
+  }
 }
-.experience_title{
-    color:#fafafa;
-    font-size: 50px;
-    padding-bottom:30px ;
+@media (min-width: 1920px) {
+  .experience_wrapper {
+    padding-top: 200px;
+  }
+  .experience_titleWrapper {
+    padding-bottom: 100px;
+  }
+  .experience_paragraph {
+    text-align: start;
+    padding: 10px 100px;
+  }
 }
-@media screen and (max-width: 540px) {
-    .experience_anchorTitle{
-        font-size: 45px;
-    }
 
-    .experience_wrapper{
-        font-size: 20px;
-    }
-    .experience_title{
-        font-size: 35px;
-
-    }
-
+@media (min-width: 2560px) {
+  .experience_wrapper {
+    padding-top: 400px;
+  }
 }
-@media screen and (max-width: 414px) {
-    .experience_anchorTitle{
-        font-size: 45px;
-    }
-
-    .experience_wrapper{
-        font-size: 20px;
-    }
-    .experience_title{
-        font-size: 35px;
-
-    }
-
+@media (min-width: 3840px) {
+  .experience_anchorTitle {
+    font-size: 4.5em;
+  }
+  .experience_title {
+    font-size: 1.9em;
+  }
+  .experience_paragraph {
+    font-size: 1.7em;
+    padding: 100px 150px;
+  }
 }

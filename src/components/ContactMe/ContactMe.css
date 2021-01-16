@@ -1,103 +1,185 @@
-.contactme_wrapper{
-    height: 100vh;
+.contactme_wrapper {
+  height: 100vh;
 }
 .contact_inputLabel p {
-    color: #0effea !important;
+  color: #0effea !important;
 }
 
 .contact_title {
-    padding-top: 100px;
+  padding-top: 100px;
 
-    display: flex;
-    justify-content: center;
-    font-size: 70px !important;
-    font-family: 'Geo' !important;
-    padding-bottom: 50px;
-    font-style: normal
+  display: flex;
+  justify-content: center;
+  font-size: 70px !important;
+  font-family: "Geo" !important;
+  padding-bottom: 50px;
+  font-style: normal;
 }
 
 .contact_title p {
-    color: #0effea !important;
+  color: #0effea !important;
 }
 
 .contact_wrapper {
-    padding-bottom: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.contact_formWrapper {}
-
 .contact_infoWrapper {
-    font-size: 40px;
-    padding: 100px;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    /* justify-content: flex-end; */
+  font-size: 40px;
+  padding: 100px;
+  width: 400px;
+  display: flex;
+  align-items: center;
 }
 
 .contact_info {
-    width: 100%;
-    color: #fff;
+  width: 100%;
+  color: #fff;
 }
 
 .contact_svg {
-    padding-left: 30px;
-    width: 50px;
-    height: 50px;
-    fill: #fff;
-    cursor: pointer;
-    align-items: center;
+  padding-left: 30px;
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+  cursor: pointer;
+  align-items: center;
 }
 
 .contact_svg:hover {
-    fill: rgba(255, 255, 255, 0.604);
-    font-family: 'Geo' !important;
+  fill: rgba(255, 255, 255, 0.604);
+  font-family: "Geo" !important;
 }
 
 .contact_infoSvg {
-    padding: 10px 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contact_svgWrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .contact_email {
-    font-size: 25px;
-    overflow-x: visible;
+  font-size: 25px;
+  overflow-x: visible;
 }
 
 .contact_cv {
-    color: #fff;
-    border-bottom: 2px solid #fff;
-    cursor: pointer;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
 }
 
 .contact_cv :hover {
-    color: rgba(255, 255, 255, 0.582);
+  color: rgba(255, 255, 255, 0.582);
 }
 
 .contact_cv a {
-    color: #fff;
+  color: #fff;
 }
-@media screen and (max-width: 3440px) {
-    .contactme_wrapper{
-        padding-top: 100px;
-    }
-}
-@media screen and (max-width: 414px) {
-    .contactme_wrapper{
-        padding-top: 750px;
-    }
 
+@media (min-width: 360px) {
+  .contactme_wrapper {
+    padding-top: 1100px;
+  }
+  .contact_infoWrapper {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  .contact_svg {
+    width: 25px;
+    height: 25px;
+  }
+  .contact_title p {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 414px) {
+  .contactme_wrapper {
+    padding-top: 800px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contactme_wrapper {
+    padding-top: 200px;
+  }
+  .contact_infoWrapper {
+    font-size: 2.2em;
+    padding: 10px;
+  }
+  .contact_svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contact_title p {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .contactme_wrapper {
+    padding-top: 300px;
+  }
+  .contact_title p {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1440px) {
+  .contactme_wrapper {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .contactme_wrapper {
+    padding-bottom: 50px;
+    padding-top: 0px;
+  }
+  .contact_title p {
+    font-size: 1.8em;
+  }
+  .contact_infoWrapper {
+    font-size: 2.5em;
+    padding: 10px;
+  }
+  .contact_svg {
+    width: 40px;
+    height: 40px;
+  }
+  .contact_formWrapper {
+    width: 900px;
+  }
+}
+@media (min-width: 2560px) {
+  .contact_infoWrapper {
+    width: 700px;
+  }
+  .contact_email {
+    font-size: 0.8em;
+  }
+  .contact_svg {
+    width: 60px;
+    height: 60px;
+  }
+  .contact_formWrapper {
+    width: 900px;
+  }
+}
+@media (min-width: 3840px) {
+  .contact_title {
+    padding-bottom: 300px;
+  }
 }

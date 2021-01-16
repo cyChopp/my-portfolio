@@ -3,9 +3,9 @@ import './Experiece.css'
 
 const Experience = () => {
     return (
-    <div id='experience' className='experience_wrapper'>
+    <div  id='experience' className='experience_wrapper'>
         <div className='experience_titleWrapper'>
-            <p className="experience_anchorTitle">Experience</p>
+            <p  className="experience_anchorTitle">Experience</p>
         </div>
         <div className='experience_paragraph'>
             <p className='experience_title'>Social-Network</p>

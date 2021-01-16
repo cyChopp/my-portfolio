@@ -1,13 +1,9 @@
 import "./App.css";
 import Feed from "./components/Feed/Feed";
 import NavBar from "./components/Navbar/NavBar";
-import { imageList } from "./imageList";
-import social from "./icons/socialNetwork.png";
-import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
+import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
 import ScrollUpButton from "react-scroll-up-button";
 
-
-import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
@@ -56,14 +52,14 @@ function App() {
               <ContactMe />
             </ParallaxProvider>
           </div>
-          {/* <div>
+          <div className="app_topScroll">
             <ScrollUpButton
               ContainerClassName="AnyClassForContainer"
               TransitionClassName="AnyClassForTransition"
             >
-              <ArrowDropUpIcon  fontSize='inherit'  style={{color:'#fff'}}/>
+              <ArrowDropUpIcon fontSize="inherit" style={{ color: "#fff" }} />
             </ScrollUpButton>
-          </div> */}
+          </div>
         </>
       )}
     </div>

@@ -15,24 +15,22 @@ const NavBar = () => {
   const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
   const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 });
 
-  useEffect(() =>{
-     yRange.onChange((v) => setIsComplete(v >= 1))
+  useEffect(() => {
+    yRange.onChange((v) => setIsComplete(v >= 1));
+  }, [yRange]);
 
-    }, [yRange]);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const [isOpen, setIsOpen] = useState(false);
+  // const openNav = () => {
+  //   document.getElementById("mySidenav").style.width = "100%";
+  // };
 
-
-  const openNav = () => {
-    document.getElementById("mySidenav").style.width = "100%";
-  };
-
-  const closeNav = () => {
-    document.getElementById("mySidenav").style.width = "0";
-  };
+  // const closeNav = () => {
+  //   document.getElementById("mySidenav").style.width = "0";
+  // };
 
   return (
-    <div className='navbar_wrapper'>
+    <div className="navbar_wrapper">
       <div className="fixedNavbarWrapper">
         <div className="pathLength">
           <svg className="progress-icon" viewBox="0 0 60 60">
@@ -65,46 +63,54 @@ const NavBar = () => {
         <div className="navbarLinks">
           <ul>
             <li>
-              <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} >SKILLS</Link>
+              <Link
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                SKILLS
+              </Link>
             </li>
             <li>
-              <Link activeClass="active" to="projects" spy={true} smooth={true} duration={1000} >PROJECTS</Link>
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                PROJECTS
+              </Link>
             </li>
             <li>
-              <Link activeClass="active" to="experience" spy={true} smooth={true} duration={1000} >EXPERIENCE</Link>
+              <Link
+                activeClass="active"
+                to="experience"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                EXPERIENCE
+              </Link>
             </li>
             <li>
-              <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000} > CV / CONTACT ME</Link>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                {" "}
+                CV / CONTACT ME
+              </Link>
             </li>
           </ul>
         </div>
         <div className="grow" />
       </div>
-
-      {/* <div id="mySidenav" className="sidenav">
-        <div href="#" >
-          <MenuIcon  onClick={closeNav} className="closebtn "/>
-        </div>
-        <div className='navbar_sidebar'>
-        <ul>
-          <li>
-            <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} onClick={closeNav}>SKILLS</Link>
-          </li>
-          <li>
-            <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} onClick={closeNav}>PROJECTS</Link>
-          </li>
-          <li>
-            <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} onClick={closeNav}>EXPERIENCE</Link>
-          </li>
-          <li>
-            <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} onClick={closeNav}>CV / CONTACT ME</Link>
-          </li>
-        </ul>
-        </div>
-      </div> */}
-      {/* <div className="navIcon"  onClick={openNav} >
-      <MenuIcon style={{float:'right',padding:'10px'}} />
-      </div> */}
     </div>
   );
 };

@@ -1,11 +1,10 @@
-
 h1 {
   font-size: 5em;
   color: #fff;
   font-style: italic;
 }
 
-.feed_wrapper{
+.feed_wrapper {
   height: 100vh;
 }
 
@@ -16,7 +15,6 @@ h1 {
   padding-top: 15%;
   padding-left: 10%;
   height: 100vh;
-
 }
 .objectTop {
   display: flex;
@@ -28,24 +26,24 @@ h1 {
   display: flex;
 }
 
-.feed_numbersWrapper{
+.feed_numbersWrapper {
   display: flex;
   flex-direction: row;
   padding-left: 100px;
 }
 
-.feed_numberSpaceBetween{
+.feed_numberSpaceBetween {
   padding: 0px 50px;
 }
 
 .objectAnimationUp {
   animation: MoveUpDown 3s linear infinite;
   position: relative;
-} 
+}
 .objectAnimationDown {
   animation: MoveDownUp 3s linear infinite;
   position: relative;
-} 
+}
 
 .feed_numberOne {
   color: #0affec;
@@ -58,9 +56,8 @@ h1 {
   text-shadow: 0 0 calc(5px * 2);
   display: flex;
   margin-right: 10px;
-
 }
-.testOne{
+.testOne {
 }
 .text {
   display: flex;
@@ -70,24 +67,21 @@ h1 {
   margin-bottom: 60px;
   transition: 0.1s ease-in-out;
   margin-right: 50px;
-
 }
-.feed_textWrapper{
+.feed_textWrapper {
   display: flex;
   flex-direction: row;
   padding: 40px 0px 0px 50px;
-
 }
 .text.first {
   animation: flash 2s forwards;
   animation-delay: 1s;
-  
 }
-.feed_role{
+.feed_role {
   display: flex;
   color: #0affec;
   font-size: 40px;
-  font-family: 'Geo';
+  font-family: "Geo";
   font-weight: 100;
   font-style: italic;
   justify-content: center;
@@ -95,49 +89,42 @@ h1 {
   padding-right: 10%;
 }
 
-
 @keyframes MoveUpDown {
-  0%{
+  0% {
     bottom: 15px;
   }
-  25%{
+  25% {
     bottom: 7px;
-
   }
   50% {
     bottom: 0px;
   }
-  75%{
+  75% {
     bottom: 7px;
-
   }
   100% {
     bottom: 15px;
   }
 }
 @keyframes MoveDownUp {
-  0%{
+  0% {
     bottom: 0px;
   }
-  25%{
+  25% {
     bottom: 7px;
-
   }
   50% {
-    bottom:15px;
+    bottom: 15px;
   }
-  75%{
+  75% {
     bottom: 7px;
-
   }
   100% {
     bottom: 0px;
   }
 }
 
-
 /* Start flash animation */
-
 
 @keyframes flash {
   0% {
@@ -170,26 +157,18 @@ h1 {
   42% {
     color: #222;
     text-shadow: unset;
-
   }
   65% {
     color: #222;
     text-shadow: unset;
-
-
   }
   85% {
     color: #222;
     text-shadow: unset;
-
-
-
   }
   95% {
     color: #222;
     text-shadow: unset;
-
-
   }
   100% {
     color: #0affec;
@@ -199,587 +178,200 @@ h1 {
 
 /* End flash animation */
 
-
-
-
 /*  -----  MEDIA  ----- */
 
-
-@media (min-width: 576px) { 
-  .name{
+@media (min-width: 576px) {
+  .name {
     padding-top: 100px;
     padding-left: 30px;
   }
-  h1{
+  h1 {
     font-size: 1em;
   }
-  .firstname{
+  .firstname {
     font-size: 1em;
-
   }
-  .text{
+  .text {
     font-size: 1.5em;
-
   }
-  .feed_numbersWrapper{
+  .feed_numbersWrapper {
     padding-left: 40px;
   }
-  .feed_numberSpaceBetween{
+  .feed_numberSpaceBetween {
     padding: 0px 25px;
   }
- }
-
- @media (min-width: 360px) { 
-  .name{
-    padding-top: 200px;
-    padding-left: 20px;
-  }
-  h1{
-    font-size: 1.5em;
-  }
-  .firstname{
-    font-size: 1.5em;
-
-  }
-  .feed_textWrapper{
-
-    padding: 15px 0px 0px 20px;
-  
-  }
-  .text{
-    font-size: 1.8em;
-
-  }
-  .feed_numbersWrapper{
-    padding-left: 20px;
-  }
-  .feed_numberSpaceBetween{
-    padding: 0px 25px;
-  }
-  .feed_role{
-    font-size: 1.5em;
-  }
- }
-
-
-
-
-
-
-
-
-
-
-/* @media screen and (max-width: 3840px) {
-  .feed_role{
-    width: 23%;
-  }
-  .objectTop{
-    top:300px
-  }
-  .objectAnimation {
-    left: 15vw;
-    width: 320px;
-  }
-  .two {
-    left: 15vw;
-    position: relative;
-  }
-  .text {
-    font-size: 110;
-    font-style: italic;
-
-  }
-  .first{
-    font-size: 130px;
-
-  }
-  h1 {
-    font-size: 110px;
-  }
-  h1::before {
-    font-size: 130px;
-    left: calc(30.5% - 1.5px);
-
-  }
-  h1::after {
-    font-size: 130px;
-    left: calc(30.5% + 1.5px);
-
-  }
-  .name {
-    padding-top: 330px;
-    padding-left:11%;
-  }
- 
-
 }
 
-@media screen and (max-width: 3440px) {
-
-  h1::before {
-    font-size: 130px;
-    left: calc(30.8% - 1.5px);
-    
-
-  }
-  h1::after {
-    font-size: 130px;
-    left: calc(30.8% + 1.5px);
-
-  }
-  .name {
-    padding-top: 330px;
-    padding-left:15.8%;
-  }
-
-}
-@media screen and (max-width: 3072px) {
-  .feed_role{
-    padding-top:100px ;
-    width:33%
-  }
-  h1::before {
-    font-size: 130px;
-    left: calc(29.8% - 1.5px);
-    
-
-  }
-  h1::after {
-    font-size: 130px;
-    left: calc(29.8% + 1.5px);
-
-  }
-  .name {
-    padding-top: 330px;
-    padding-left:17.8%;
-  }
-
-}
-@media screen and (max-width: 2880px) {
-  .feed_role{
-    padding-top:100px ;
-    width:33%
-  }
-  h1::before {
-    font-size: 130px;
-    left: calc(27.8% - 1.5px);
-    
-
-  }
-  h1::after {
-    font-size: 130px;
-    left: calc(27.8% + 1.5px);
-
-  }
-  .name {
-    padding-top: 330px;
-    padding-left:16.8%;
-  }
-
-}
-
-@media screen and (max-width: 2560px) {
-  .feed_role{
-    width: 23%;
-  }
-  .objectTop{
-    top:300px
-  }
-  .objectAnimation {
-    left: 19vw;
-    width: 320px;
-  }
-  .text {
-    font-size: 110px;
-  }
-  .first{
-    font-size: 130px;
-
-  }
-  h1 {
-    font-size: 110px;
-
-  }
-  h1::before {
-    font-size: 130px;
-    left: calc(23.8% - 1.5px);
-    
-
-  }
-  h1::after {
-    font-size: 130px;
-    left: calc(23.8% + 1.5px);
-
-  }
-  .name {
-    padding-top: 330px;
-    padding-left:15%;
-  }
-  .two {
-    left: 19vw;
-    position: relative;
-  }
-}
-@media screen and (max-width: 2360px) {
-  .text {
-    font-size: 120px;
-  }
-  h1 {
-    font-size: 100px;
-
-  }
-  h1::before {
-    font-size: 120px;
-    left: calc(23.8% - 1.5px);
-    
-
-  }
-  h1::after {
-    font-size: 120px;
-    left: calc(23.8% + 1.5px);
-
-  }
-  .name {
-    padding-top: 330px;
-    padding-left:17%;
-  }
-}
-@media screen and (max-width: 2165px) {
-  .text {
-    font-size: 120px;
-  }
-  h1 {
-    font-size: 100px;
-
-  }
-  h1::before {
-    font-size: 120px;
-    left: calc(20.8% - 1.5px);
-    
-
-  }
-  h1::after {
-    font-size: 120px;
-    left: calc(20.8% + 1.5px);
-
-  }
-  .name {
-    padding-top: 330px;
-    padding-left:17%;
-  }
-}
-@media screen and (max-width:2256px) {
-  h1::before {
-    font-size: 120px;
-    left: calc(22% - 1.5px);
-    
-
-  }
-  h1::after {
-    font-size: 120px;
-    left: calc(22% + 1.5px);
-
-  }
-}
-
-@media screen and (max-width:2152px) {
-  h1::before {
-    font-size: 120px;
-    left: calc(20.5% - 1.5px);
-    
-
-  }
-  h1::after {
-    font-size: 120px;
-    left: calc(20.5% + 1.5px);
-
-  }
-}
-@media screen and (max-width:2040px) {
-
-  h1::before {
-    font-size: 120px;
-    left: calc(18.5% - 1.5px);
-    
-
-  }
-  h1::after {
-    font-size: 120px;
-    left: calc(18.5% + 1.5px);
-
-  }
-
-}
-@media screen and (max-width:1920px) {
-  .feed_role{
-    width: 23%;
-  }
-  .objectTop{
-    top:200px
-  }
-  .objectAnimation {
-    left: 25vw;
-    width: 320px;
-  }
-  .text {
-    font-size: 110px;
-  }
-  .first{
-    font-size: 130px;
-
-  }
-  h1 {
-    font-size: 110px;
-  }
-  h1::before {
-    font-size: 130px;
-    left: calc(10% - 1.5px);
-
-  }
-  h1::after {
-    font-size: 130px;
-    left: calc(10% + 1.5px);
-
-  }
-  .name {
-    padding-top: 230px;
-    padding-left:10%;
-  }
-  .two {
-    left: 25vw;
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .objectTop{
-    top:190px
-  }
-  .objectAnimation {
-    left: 22vw;
-    width: 250px;
-  }
-  .text {
-    font-size: 100px;
-  }
-  .first{
-    font-size: 110px;
-
-  }
-  h1 {
-    font-size: 85px;
-  }
-  h1::before {
-    font-size: 110px;
-    left: calc(5% - 1.5px);
-
-  }
-  h1::after {
-    font-size: 110px;
-    left: calc(5% + 1.5px);
-
-  }
-  .name {
-    padding-top: 200px;
-    padding-left:5%;
-
-
-  }
-  .two {
-    left:22vw;
-    position: relative;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .objectTop{
-    top:200px
-  }
-  .objectAnimation {
-    left: 25vw;
-    width: 320px;
-  }
-  .text {
-    font-size: 90px;
-  }
-  .first{
-    font-size: 100px;
-
-  }
-  h1 {
-    font-size: 90px;
-  }
-  h1::before {
-    font-size: 100px;
-    left: calc(5% - 1.5px);
-
-  }
-  h1::after {
-    font-size: 100px;
-    left: calc(5% + 1.5px);
-
-  }
-  .name {
-    padding-top: 200px;
-    padding-left:5%;
-  }
-  .two {
-    left: 25vw;
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 950px) {
-
-  .objectTop {
-  top:110px    
-  }
-  
-  .text {
-    font-size: 65px;
-  }
-  h1 {
-    font-size: 65px;
-  }
-  h1::before {
-    font-size: 65px;
-  }
-  h1::after {
-    font-size: 65px;
-  }
-  .name {
-    padding-top: 130px;
-  }
-  .two {
-    left: 25vw;
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .objectAnimation {
-    left: 30vw;
-    width: 150px;
-  }
-  .objectTop {
-  top:150px    
-  }
-  .text {
-    font-size: 65px;
-  }
-  h1 {
-    font-size: 65px;
-  }
-  h1::before {
-    font-size: 65px;
-    left: calc(5% - 1.5px);
-
-  }
-  h1::after {
-    font-size: 65px;
-    left: calc(5% - 1.5px);
-
-  }
-  .name {
-    padding-top: 180px;
-    padding-left: 5%;
-
-  }
-  .two {
-    left: 30vw;
-    position: relative;
-  }
-
-}
-
-@media screen and (max-width: 645px) {
-  .objectAnimation {
-    left: 30vw;
-    width: 150px;
-  }
-  .objectTop {
-  top:150px    
-  }
-  .text {
-    font-size: 50px;
-  }
-  h1 {
-    font-size: 50px;
-  }
-  h1::before {
-    font-size: 50px;
-  }
-  h1::after {
-    font-size: 50px;
-  }
-  .name {
-    padding-top: 180px;
-  }
-
-}
-
-@media screen and (max-width: 500px) {
-  .objectTop {
-    top:100px    
-    }
-  .text {
-    font-size: 45px;
-  }
-  h1 {
-    font-size: 45px;
-  }
-  h1::before {
-    font-size: 45px;
-    left: calc(5% - 1.5px);
-  }
-  h1::after {
-    font-size: 45px;
-    left: calc(5% + 1.5px);
-  }
+@media (min-width: 360px) {
   .name {
     padding-top: 150px;
-    padding-left: 5%;
+    padding-left: 20px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .firstname {
+    font-size: 1.5em;
+  }
+  .feed_textWrapper {
+    padding: 15px 0px 0px 20px;
+  }
+  .text {
+    font-size: 1.8em;
+  }
+  .feed_numbersWrapper {
+    padding-left: 20px;
+  }
+  .feed_numberSpaceBetween {
+    padding: 0px 25px;
+  }
+  .feed_role {
+    padding-top: 100px;
+    font-size: 1.5em;
   }
 }
 
-@media screen and (max-width: 414px) {
-
-  .feed_role{
-    width: 100%;
-    font-size: 30px;
-  }
-  .sidebar{
-    width: 0;
-  }
-  .objectAnimation {
-    left: 40vw;
-    width: 50px;
-  }
-  .two{
-    width: 50px;
-    left: 40vw;
-
-  }
-  .objectTop {
-    top:150px    
-    }
-  .text {
-    font-size: 35px;
+@media (min-width: 414px) {
+  .name {
+    padding-top: 150px;
+    padding-left: 15px;
   }
   h1 {
-    font-size: 35px;
+    font-size: 1.5em;
   }
-  h1::before {
-    font-size: 35px;
-    left: calc(10% - 1.5px);
+  .firstname {
+    font-size: 1.5em;
   }
-  h1::after {
-    font-size: 35px;
-    left: calc(10% + 1.5px);
+  .feed_textWrapper {
+    padding: 15px 0px 0px 20px;
   }
+  .text {
+    font-size: 2.2em !important;
+  }
+  .feed_numbersWrapper {
+    padding-left: 20px;
+  }
+  .feed_numberSpaceBetween {
+    padding: 0px 25px;
+  }
+  .feed_role {
+    padding-top: 150px;
+
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
   .name {
     padding-top: 200px;
     padding-left: 10%;
   }
+  h1 {
+    font-size: 3em;
+  }
+  .firstname {
+    font-size: 3em;
+  }
+  .feed_textWrapper {
+    padding: 15px 0px 0px 20px;
+  }
+  .text {
+    font-size: 3.8em !important;
+  }
+  .feed_numbersWrapper {
+    padding-left: 20px;
+  }
+  .feed_numberSpaceBetween {
+    padding: 0px 25px;
+  }
+  .feed_role {
+    padding-top: 260px;
+
+    font-size: 1.5em;
+  }
 }
- */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 4em;
+  }
+  .firstname {
+    font-size: 4em;
+  }
+  .feed_textWrapper {
+    padding: 15px 0px 0px 20px;
+  }
+  .text {
+    font-size: 4.9em !important;
+  }
+  .feed_numbersWrapper {
+    padding-left: 70px;
+  }
+
+  .feed_role {
+    padding-top: 40px;
+
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1920px) {
+  h1 {
+    font-size: 5.5em;
+  }
+  .firstname {
+    font-size: 5.5em;
+  }
+  .feed_textWrapper {
+    padding: 15px 0px 0px 20px;
+  }
+  .text {
+    font-size: 7.5em !important;
+  }
+  .feed_numbersWrapper {
+    padding-left: 180px;
+  }
+  .feed_numberSpaceBetween {
+    padding: 0px 60px;
+  }
+  .feed_role {
+    padding-top: 100px;
+
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 2560px) {
+  .name {
+    padding-top: 300px;
+  }
+  h1 {
+    font-size: 7em;
+  }
+  .firstname {
+    font-size: 7em;
+  }
+  .feed_textWrapper {
+    padding: 15px 0px 0px 20px;
+  }
+  .text {
+    font-size: 9em !important;
+  }
+}
+
+@media (min-width: 3840px) {
+  .name {
+    padding-top: 500px;
+  }
+  h1 {
+    font-size: 7em;
+  }
+  .firstname {
+    font-size: 7em;
+  }
+  .feed_textWrapper {
+    padding: 15px 0px 0px 20px;
+  }
+  .text {
+    font-size: 9em !important;
+  }
+}

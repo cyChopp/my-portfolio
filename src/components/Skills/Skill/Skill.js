@@ -11,7 +11,7 @@ const Skill = ({ image, title }) => {
 `;
   return (
     <div className="skill_wrapper">
-      <div className='skill_info'>
+      <div >
         <StyledSVGOne className='skill_image'/>
       </div>
       <div className="skill_title"><p>{title}</p></div>
