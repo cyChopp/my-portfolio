@@ -8,8 +8,8 @@ height: 100vh;
     display: flex;
     flex-wrap: wrap ;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    justify-items: center;
+
     /* padding-bottom: 100px; */
 }
 .skills_titleWrapper{
@@ -24,17 +24,10 @@ height: 100vh;
     font-family: 'Geo';
 
 }
-@media screen and (max-width: 3440px) {
-    #skills{
-        padding-top: 100px;
-        padding-bottom: 100px;
+
+@media (min-width: 360px) { 
+    .skills_title{
+        font-size: 3em;
 
     }
-}
-@media screen and (max-width: 414px) {
-    #skills{
-     padding-bottom: 500px;
-    }
-    
-
 }

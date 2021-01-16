@@ -65,7 +65,6 @@ const NavBar = () => {
         <div className="navbarLinks">
           <ul>
             <li>
-              
               <Link activeClass="active" to="skills" spy={true} smooth={true} duration={1000} >SKILLS</Link>
             </li>
             <li>
@@ -82,7 +81,7 @@ const NavBar = () => {
         <div className="grow" />
       </div>
 
-      <div id="mySidenav" className="sidenav">
+      {/* <div id="mySidenav" className="sidenav">
         <div href="#" >
           <MenuIcon  onClick={closeNav} className="closebtn "/>
         </div>
@@ -102,10 +101,10 @@ const NavBar = () => {
           </li>
         </ul>
         </div>
-      </div>
-      <div className="navIcon"  onClick={openNav} >
+      </div> */}
+      {/* <div className="navIcon"  onClick={openNav} >
       <MenuIcon style={{float:'right',padding:'10px'}} />
-      </div>
+      </div> */}
     </div>
   );
 };

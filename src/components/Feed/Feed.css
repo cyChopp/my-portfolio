@@ -1,50 +1,143 @@
 
+h1 {
+  font-size: 5em;
+  color: #fff;
+  font-style: italic;
+}
 
 .feed_wrapper{
   height: 100vh;
 }
 
 .name {
+  display: flex;
+  flex-direction: column;
   font-family: "Bungee Shade", cursive;
   padding-top: 15%;
-  padding-left: 15%;
+  padding-left: 10%;
   height: 100vh;
+
+}
+.objectTop {
+  display: flex;
 }
 
 .firstname {
-  text-shadow: 0 0 calc(3px * 1);
+  font-size: 5em;
+  text-shadow: 0 0 calc(5px * 2);
+  display: flex;
 }
 
-/* Start flash animation */
+.feed_numbersWrapper{
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+}
 
+.feed_numberSpaceBetween{
+  padding: 0px 50px;
+}
+
+.objectAnimationUp {
+  animation: MoveUpDown 3s linear infinite;
+  position: relative;
+} 
+.objectAnimationDown {
+  animation: MoveDownUp 3s linear infinite;
+  position: relative;
+} 
+
+.feed_numberOne {
+  color: #0affec;
+  text-shadow: 0 0 calc(5px * 2);
+  display: flex;
+  margin-right: 10px;
+}
+.feed_numberZero {
+  color: #ffffff;
+  text-shadow: 0 0 calc(5px * 2);
+  display: flex;
+  margin-right: 10px;
+
+}
+.testOne{
+}
 .text {
-  font-size: 7rem;
+  display: flex;
+  font-size: 7em;
   text-align: left;
   color: #222;
   margin-bottom: 60px;
   transition: 0.1s ease-in-out;
-}
+  margin-right: 50px;
 
+}
+.feed_textWrapper{
+  display: flex;
+  flex-direction: row;
+  padding: 40px 0px 0px 50px;
+
+}
 .text.first {
-  animation: flash 1s forwards;
+  animation: flash 2s forwards;
   animation-delay: 1s;
-}
-
-.text.on {
-  animation: flashOn 0.5s forwards;
+  
 }
 .feed_role{
   display: flex;
   color: #0affec;
   font-size: 40px;
   font-family: 'Geo';
-  margin: auto;
-  width: 100%;
   font-weight: 100;
   font-style: italic;
-
-
+  justify-content: center;
+  padding-top: 200px;
+  padding-right: 10%;
 }
+
+
+@keyframes MoveUpDown {
+  0%{
+    bottom: 15px;
+  }
+  25%{
+    bottom: 7px;
+
+  }
+  50% {
+    bottom: 0px;
+  }
+  75%{
+    bottom: 7px;
+
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+@keyframes MoveDownUp {
+  0%{
+    bottom: 0px;
+  }
+  25%{
+    bottom: 7px;
+
+  }
+  50% {
+    bottom:15px;
+  }
+  75%{
+    bottom: 7px;
+
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+
+/* Start flash animation */
+
 
 @keyframes flash {
   0% {
@@ -63,7 +156,7 @@
     color: #0affec;
     text-shadow: 0 0 10px;
   }
-  32% {
+  31% {
     color: #222;
     text-shadow: unset;
   }
@@ -73,149 +166,111 @@
   }
   40% {
     color: #0affec;
-    text-shadow: 0 0 10px;
   }
-  50% {
+  42% {
     color: #222;
     text-shadow: unset;
+
   }
   65% {
     color: #222;
     text-shadow: unset;
+
+
   }
   85% {
     color: #222;
     text-shadow: unset;
+
+
+
   }
   95% {
     color: #222;
     text-shadow: unset;
+
+
   }
   100% {
     color: #0affec;
-    text-shadow: 0 0 calc(20px * 10);
-    text-shadow: calc(0.005 * -6em) 0 .04em #0affec, calc(0.005* -6em) 0 .04em #ff00e1,
+    text-shadow: 0 0 calc(5px * 2);
   }
 }
 
 /* End flash animation */
 
-/* Start glitch animation */
-
-h1 {
-  font-size: 95px;
-  color: #fff;
-  font-style: italic;
-}
-
-h1::before {
-  content: attr(data-text);
-  position: absolute;
-  left: calc(15% -1.5px);
-  text-shadow: 1.5px 0 #69cad1;
-  animation: glitch1 0.8s infinite linear alternate-reverse;
-}
-
-h1::after {
-  content: attr(data-text);
-  position: absolute;
-  left: calc(15% + 1.5px);
-  text-shadow: -1.5px 0 #ef1751;
-  animation: glitch2 1s infinite linear alternate-reverse;
-}
-
-@keyframes glitch1 {
-  0% {
-    clip-path: inset(5% 0 15% 0);
-  }
-  20% {
-    clip-path: inset(61% 0 9% 0);
-  }
-  40% {
-    clip-path: inset(5% 0 81% 0);
-  }
-  60% {
-    clip-path: inset(21% 0 52% 0);
-  }
-  80% {
-    clip-path: inset(11% 0 70% 0);
-  }
-  100% {
-    clip-path: inset(68% 0 6% 0);
-  }
-}
-
-@keyframes glitch2 {
-  0% {
-    clip-path: inset(82% 0 9% 0);
-  }
-  20% {
-    clip-path: inset(31% 0 44% 0);
-  }
-  40% {
-    clip-path: inset(49% 0 11% 0);
-  }
-  60% {
-    clip-path: inset(6% 0 85% 0);
-  }
-  80% {
-    clip-path: inset(40% 0 37% 0);
-  }
-  100% {
-    clip-path: inset(90% 0 3% 0);
-  }
-}
-
-/* End glitch animation */
-
-
-
-.two {
-  left: 18vw;
-  position: relative;
-}
-
-
-.four {
-  left: 18vw;
-  position: relative;
-}
-
-.five {}
-
-.objectTop {
-  position: absolute;
-  top: 210px;
-  
-}
-
-/*  ----- ANIMATION -----  */
-
-.objectAnimation {
-  animation: MoveUpDown 4s linear infinite;
-  position: relative;
-  left: 18vw;
-  z-index: 4;
-  width: 300px;
-
-}
-
-
-
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: -5px;
-  }
-  50% {
-    bottom: 15px;
-  }
-}
 
 
 
 /*  -----  MEDIA  ----- */
 
-@media screen and (max-width: 3840px) {
+
+@media (min-width: 576px) { 
+  .name{
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+  h1{
+    font-size: 1em;
+  }
+  .firstname{
+    font-size: 1em;
+
+  }
+  .text{
+    font-size: 1.5em;
+
+  }
+  .feed_numbersWrapper{
+    padding-left: 40px;
+  }
+  .feed_numberSpaceBetween{
+    padding: 0px 25px;
+  }
+ }
+
+ @media (min-width: 360px) { 
+  .name{
+    padding-top: 200px;
+    padding-left: 20px;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+  .firstname{
+    font-size: 1.5em;
+
+  }
+  .feed_textWrapper{
+
+    padding: 15px 0px 0px 20px;
+  
+  }
+  .text{
+    font-size: 1.8em;
+
+  }
+  .feed_numbersWrapper{
+    padding-left: 20px;
+  }
+  .feed_numberSpaceBetween{
+    padding: 0px 25px;
+  }
+  .feed_role{
+    font-size: 1.5em;
+  }
+ }
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 3840px) {
   .feed_role{
     width: 23%;
   }
@@ -336,7 +391,7 @@ h1::after {
     width: 320px;
   }
   .text {
-    font-size: 110;
+    font-size: 110px;
   }
   .first{
     font-size: 130px;
@@ -366,6 +421,96 @@ h1::after {
     position: relative;
   }
 }
+@media screen and (max-width: 2360px) {
+  .text {
+    font-size: 120px;
+  }
+  h1 {
+    font-size: 100px;
+
+  }
+  h1::before {
+    font-size: 120px;
+    left: calc(23.8% - 1.5px);
+    
+
+  }
+  h1::after {
+    font-size: 120px;
+    left: calc(23.8% + 1.5px);
+
+  }
+  .name {
+    padding-top: 330px;
+    padding-left:17%;
+  }
+}
+@media screen and (max-width: 2165px) {
+  .text {
+    font-size: 120px;
+  }
+  h1 {
+    font-size: 100px;
+
+  }
+  h1::before {
+    font-size: 120px;
+    left: calc(20.8% - 1.5px);
+    
+
+  }
+  h1::after {
+    font-size: 120px;
+    left: calc(20.8% + 1.5px);
+
+  }
+  .name {
+    padding-top: 330px;
+    padding-left:17%;
+  }
+}
+@media screen and (max-width:2256px) {
+  h1::before {
+    font-size: 120px;
+    left: calc(22% - 1.5px);
+    
+
+  }
+  h1::after {
+    font-size: 120px;
+    left: calc(22% + 1.5px);
+
+  }
+}
+
+@media screen and (max-width:2152px) {
+  h1::before {
+    font-size: 120px;
+    left: calc(20.5% - 1.5px);
+    
+
+  }
+  h1::after {
+    font-size: 120px;
+    left: calc(20.5% + 1.5px);
+
+  }
+}
+@media screen and (max-width:2040px) {
+
+  h1::before {
+    font-size: 120px;
+    left: calc(18.5% - 1.5px);
+    
+
+  }
+  h1::after {
+    font-size: 120px;
+    left: calc(18.5% + 1.5px);
+
+  }
+
+}
 @media screen and (max-width:1920px) {
   .feed_role{
     width: 23%;
@@ -378,7 +523,7 @@ h1::after {
     width: 320px;
   }
   .text {
-    font-size: 110;
+    font-size: 110px;
   }
   .first{
     font-size: 130px;
@@ -596,45 +741,7 @@ h1::after {
     padding-left: 5%;
   }
 }
-/* @media screen and (max-width: 411px ) {
-  .feed_role{
-    width: 100%;
-    font-size: 30px;
-  }
-  .sidebar{
-    width: 0;
-  }
-  .objectAnimation {
-    left: 40vw;
-    width: 50px;
-  }
-  .two{
-    width: 50px;
-    left: 40vw;
 
-  }
-  .objectTop {
-    top:150px    
-    }
-  .text {
-    font-size: 35px;
-  }
-  h1 {
-    font-size: 35px;
-  }
-  h1::before {
-    font-size: 35px;
-    left: calc(10% - 1.5px);
-  }
-  h1::after {
-    font-size: 35px;
-    left: calc(10% + 1.5px);
-  }
-  .name {
-    padding-top: 200px;
-    padding-left: 10%;
-  }
-} */
 @media screen and (max-width: 414px) {
 
   .feed_role{
@@ -675,4 +782,4 @@ h1::after {
     padding-left: 10%;
   }
 }
-
+ */

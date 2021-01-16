@@ -13,6 +13,9 @@ import { Image } from "@material-ui/icons";
 import React from "react";
 import styles from "./Project.css";
 
+import GlitchClip from 'react-glitch-effect/core/Clip';
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -24,18 +27,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Project = ({ title, link, code, image, technologies }) => {
+const Project = ({ title, link, code, image, technologies,glitchTime }) => {
   const classes = useStyles();
 
   return (
     <div className="project_rootWrapper">
       <Card className="project_root">
         <CardActionArea>
+        <GlitchClip duration={glitchTime}>
+
           <CardMedia
             className="project_media"
             image={image}
             title="Contemplative Reptile"
           />
+     </GlitchClip>
           <CardContent>
             <Typography
               gutterBottom

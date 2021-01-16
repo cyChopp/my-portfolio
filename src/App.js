@@ -56,14 +56,14 @@ function App() {
               <ContactMe />
             </ParallaxProvider>
           </div>
-          <div>
+          {/* <div>
             <ScrollUpButton
               ContainerClassName="AnyClassForContainer"
               TransitionClassName="AnyClassForTransition"
             >
               <ArrowDropUpIcon  fontSize='inherit'  style={{color:'#fff'}}/>
             </ScrollUpButton>
-          </div>
+          </div> */}
         </>
       )}
     </div>

@@ -21,13 +21,13 @@ const Projects = () => {
       <div className="projects_wrapper">
 
       <Parallax className="custom-class" y={[-10, 10]} tagOuter="figure">
-        <Project title="Social-network" link={'https://breeab-3218f.firebaseapp.com/signin'} code={'https://github.com/cyChopp/Breeab'} image={social} technologies={['React','React-Redux','Hooks','Hocs','Firebase','Flux','Material Ui',]} />
+        <Project glitchTime={'3s'} title="Social-network" link={'https://breeab-3218f.firebaseapp.com/signin'} code={'https://github.com/cyChopp/Breeab'} image={social} technologies={['React','React-Redux','Hooks','Hocs','Firebase','Flux','Material Ui',]} />
         </Parallax>
 
-        <Project title="E-commerce shop" link={'https://online-shop-3cfcd.web.app/'} code={'https://github.com/cyChopp/online-shop'} image={shop} technologies={['React','React Context','Hooks','Commerce.js','Material Ui']}/>
+        <Project glitchTime={'6s'} title="E-commerce shop" link={'https://online-shop-3cfcd.web.app/'} code={'https://github.com/cyChopp/online-shop'} image={shop} technologies={['React','React Context','Hooks','Commerce.js','Material Ui']}/>
 
         <Parallax className="custom-class" y={[10, -10]} tagOuter="figure">
-        <Project title="Galaxy-todo" link={'https://galaxy-todo.web.app/'} code={'https://github.com/cyChopp/another-one'} onClick={MyComponent} image={todo} technologies={['React','Context','Hooks','Reducers','Firebase']}/>
+        <Project glitchTime={'9s'} title="Galaxy-todo" link={'https://galaxy-todo.web.app/'} code={'https://github.com/cyChopp/another-one'} onClick={MyComponent} image={todo} technologies={['React','Context','Hooks','Reducers','Firebase']}/>
         </Parallax>
 
       </div>
