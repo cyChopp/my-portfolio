@@ -13,8 +13,7 @@ import { Image } from "@material-ui/icons";
 import React from "react";
 import styles from "./Project.css";
 
-import GlitchClip from 'react-glitch-effect/core/Clip';
-
+import GlitchClip from "react-glitch-effect/core/Clip";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,21 +26,19 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Project = ({ title, link, code, image, technologies,glitchTime }) => {
+const Project = ({ title, link, code, image, technologies, glitchTime }) => {
   const classes = useStyles();
 
   return (
     <div className="project_rootWrapper">
-      <Card className="project_root">
+      <Card className="project_root" >
         <CardActionArea>
-        <GlitchClip duration={glitchTime}>
 
           <CardMedia
             className="project_media"
             image={image}
             title="Contemplative Reptile"
           />
-     </GlitchClip>
           <CardContent>
             <Typography
               gutterBottom
@@ -49,7 +46,7 @@ const Project = ({ title, link, code, image, technologies,glitchTime }) => {
               component="h2"
               className="project_cart project_title"
             >
-              {title}
+              <GlitchClip duration={glitchTime}>{title}</GlitchClip>
             </Typography>
 
             <div className={classes.root}>

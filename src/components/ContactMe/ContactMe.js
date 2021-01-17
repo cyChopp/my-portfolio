@@ -14,7 +14,7 @@ import {
   withStyles,
 } from "@material-ui/core";
 
-import { Parallax } from "react-scroll-parallax";
+import swal from "sweetalert";
 
 import { ReactComponent as GithubSVG } from "../../icons/github.svg";
 import { ReactComponent as LinkedinSVG } from "../../icons/linkedIn.svg";
@@ -105,9 +105,11 @@ const ContactMe = () => {
       .then(
         (result) => {
           console.log(result.text, "success");
+          swal("Good job!", "Your email was sent successfully to Alexander!", "success");
         },
         (error) => {
           console.log(error.text, "error");
+          swal("Something went wrong!", "Try again!", "error");
         }
       );
 
@@ -121,6 +123,7 @@ const ContactMe = () => {
     display: block;
     margin: auto;
   `;
+
   return (
     <div id="contact" className="contactme_wrapper">
       <div className="contact_title">
@@ -196,6 +199,7 @@ const ContactMe = () => {
                       variant="outlined"
                       required
                       fullWidth
+                      type='email'
                       id="email"
                       label="Email"
                       name="email"

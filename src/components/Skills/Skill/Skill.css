@@ -1,52 +1,77 @@
-.skill_wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 300px;
-    padding:40px 70px
+.skill_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  padding: 40px 70px;
 }
 
-.skill_image{
+.skill_image {
+  width: 150px;
+  height: 150px;
+}
+
+.skill_title {
+  font-size: 25px;
+  font-family: "Geo";
+  color: #0affec;
+  padding-top: 30px;
+}
+
+@media (min-width: 360px) {
+  .skill_image {
+    width: 95px;
+    height: 95px;
+  }
+  .skill_wrapper {
+    padding: 30px 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skill_title {
+    font-size: 35px;
+    padding-top: 30px;
+  }
+  .skill_image {
     width: 150px;
     height: 150px;
+  }
 }
-.skill_title{
-
-    font-size: 25px;
-    font-family: 'Geo';
-    color:#0affec;
-    padding-top:30px
+@media (min-width: 1280px) {
+    .skill_title {
+        font-size: 30px;
+        /* padding-top: 30px; */
+      }
+    .skill_image {
+        width: 90px;
+        height: 90px;
+      }
+}
+@media (min-width: 1920px) {
+  .skill_image {
+    width: 150px;
+    height: 150px;
+  }
+  .skill_title {
+    padding-top: 30px;
+    font-size: 35px;
+  }
+  
 }
 
-@media (min-width: 360px) { 
-    .skill_image{
-        width: 95px;
-        height: 95px;
-    }
-    .skill_wrapper{
-        padding:30px 30px
-    }
-}
-@media (min-width: 1920px) { 
-    .skill_image{
-        width: 150px;
-        height: 150px;
-    }
-    .skill_title{
 
-        font-size: 35px;
-  
-    }
-  
-   }
-   @media (min-width: 2560px) { 
-    .skill_image{
-        width: 175px;
-        height: 175px;
-    }
-    .skill_wrapper{
-        padding:30px 30px
-    }
-  
-   }
+@media (min-width: 2560px) {
+  .skill_image {
+    width: 200px;
+    height: 200px;
+  }
+  .skill_wrapper {
+    padding: 30px 30px;
+  }
+  .skill_title{
+    padding-top: 40px;
+    font-size: 50px;
+  }
+}

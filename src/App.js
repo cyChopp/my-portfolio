@@ -28,8 +28,9 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
+    <>
       {loading ? (
+       <div className="app">
         <div className="app_loader">
           <ScaleLoader
             color={"#0effea"}
@@ -40,8 +41,9 @@ function App() {
             margin={2}
           />
         </div>
+        </div>
       ) : (
-        <>
+        <div className='app_feed'>
           <div className="app_background">
             <ParallaxProvider>
               <NavBar />
@@ -60,9 +62,9 @@ function App() {
               <ArrowDropUpIcon fontSize="inherit" style={{ color: "#fff" }} />
             </ScrollUpButton>
           </div>
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 }
 

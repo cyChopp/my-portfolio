@@ -8,8 +8,23 @@ body {
 
 .app {
   color: #0effea;
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
   background-image: none;
+  animation: fade-out 3s;
+}
+@keyframes fade-out{
+  0% {
+    opacity: 1;
+}
+15% {
+   opacity: 1;
+}
+75% {
+   opacity: 1;
+}
+100% {
+   opacity: 0;
+}
 }
 .app_loader {
   height: 100vh;
@@ -17,8 +32,15 @@ body {
   justify-content: center;
   align-items: center;
   scroll-behavior: none;
+  animation: none;
+  z-index: 9999;
 }
 
+.app_feed{
+  color: #0effea;
+  background-color: #000;
+  background-image: none;
+}
 .app_background {
   background-image: url(./icons/background101.png);
 }

@@ -12,7 +12,6 @@
     box-shadow: 1px 1px 30px #0affea;
 }
 
-
 .project_cart {
     margin: 0px 10px !important;
     padding-bottom: 20px;
@@ -45,4 +44,28 @@
     font-size: 20px;
     color: rgb(121, 121, 121);
     border-radius: 0px !important;
+}
+
+@media(min-width:1024px) {
+    .project_rootWrapper {
+        padding: 50px 200px;
+    }
+}
+
+@media(min-width:1280px) {
+    .project_buttons {
+        flex-wrap: wrap;
+    }
+    .project_rootWrapper {
+        padding: 50px 0px;
+        height: 400px;
+        width: 400px;
+    }
+    .project_media {
+        height: 200px !important;
+    }
+    .project_root {
+        max-width: 400px;
+        height: 500px;
+    }
 }
