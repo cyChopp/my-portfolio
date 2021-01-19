@@ -14,7 +14,7 @@ import { Parallax } from "react-scroll-parallax";
 const Skills = () => {
   return (
     <div id="skills">
-      <Parallax className="custom-class" y={[-10, 10]} tagOuter="figure">
+      {/* <Parallax className="custom-class" y={[-10, 10]} tagOuter="figure"> */}
         <div className="skills_mainWrapper">
           <div className="skills_titleWrapper">
             <p className="skills_title">Skills</p>
@@ -30,7 +30,7 @@ const Skills = () => {
             <Skill image={MaterialImage} title="Material Ui" />
           </div>
         </div>
-      </Parallax>
+      {/* </Parallax> */}
     </div>
   );
 };

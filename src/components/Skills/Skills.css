@@ -1,7 +1,11 @@
+#skills {
+  padding-top: 5%;
+}
+
 .skills_mainWrapper {
-  padding-top: 100px;
   height: 100vh;
 }
+
 .skills_wrapper {
   max-width: 2000px;
   display: flex;
@@ -9,83 +13,62 @@
   justify-content: center;
   justify-items: center;
 }
+
 .skills_titleWrapper {
   display: flex;
   justify-content: center;
   padding-bottom: 70px;
 }
+
 .skills_title {
   color: #0affec;
-  font-size: 100px;
   font-family: "Geo";
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .skills_title {
-    font-size: 3em;
-  }
-  #skills {
-    padding-bottom: 350px;
+    font-size: 2.6em;
   }
 }
+
 @media (min-width: 768px) {
   .skills_title {
-    font-size: 5em;
+    font-size: 3.5em;
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills_title {
+    font-size: 4em;
+    padding-bottom: 150px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .skills_title {
+    font-size: 4em;
     padding-bottom: 50px;
   }
-  #skills {
-    padding-top: 100px;
+  .skills_titleWrapper {
     padding-bottom: 0px;
   }
 }
 
-@media (min-width: 992px) {
-  #skills {
-    padding-top: 0px;
-  }
+@media (min-width :1440px) {
   .skills_title {
-    padding-bottom: 0px;
-  }
-}
-@media (min-width: 1024px) {
-  #skills{
-    padding-top: 100px;
-  }
-  .skills_titleWrapper{
-    padding-bottom: 200px;
-  }
-}
-@media (min-width: 1280px) {
-  #skills{
-    padding-top: 0px;
-  }
-  .skills_titleWrapper{
-    padding-bottom:100px;
-
+    padding-top: 50px;
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width :1920px) {
   .skills_title {
-    font-size: 8em;
-    padding-bottom: 30px;
+    font-size: 5em;
   }
-  #skills {
+}
+
+@media (min-width :2560px) {
+  .skills_wrapper {
     padding-top: 100px;
-  }
-}
-
-@media (min-width: 2560px) {
-  .skills_wrapper {
-    padding-top: 70px;
-  }
-}
-
-@media (min-width: 3840px) {
-  .skills_mainWrapper {
-    padding-top: 200px;
-  }
-  .skills_wrapper {
-    padding-top: 400px;
   }
 }

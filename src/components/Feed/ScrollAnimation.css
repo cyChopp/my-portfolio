@@ -1,6 +1,7 @@
 
   .icon-scroll,
   .icon-scroll:before {
+ 
     position: absolute;
     left: 50%;
   }
@@ -63,3 +64,22 @@
       transform: translateY(30px);
     }
   }
+
+
+  @media (min-width: 320px) { 
+    .icon-scroll {
+      width: 20px;
+      height: 40px;
+    }
+    .icon-scroll:before {
+      top: 3px;
+    }
+  }
+  @media (min-width: 375px) { 
+  }
+  @media (min-width: 414px) { 
+  }
+  @media (min-width: 768px) { 
+  }
+  
+  

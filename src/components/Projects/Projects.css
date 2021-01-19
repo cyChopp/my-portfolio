@@ -1,5 +1,5 @@
 .projects_anchorWrapper {
-  padding-top: 100px;
+  padding-top: 5%;
 }
 
 .projects_titleWrapper {
@@ -10,7 +10,6 @@
 
 .projects_anchorTitle {
   color: #0affec;
-  font-size: 100px;
   font-family: "Geo";
 }
 
@@ -23,64 +22,50 @@
   padding-top: 100px;
 }
 
-@media (min-width: 360px) {
-  .projects_anchorWrapper {
-    padding-top: 200px;
-  }
+@media (min-width: 320px) {
   .projects_anchorTitle {
-    font-size: 4em;
+    font-size: 2.6em;
   }
 }
 
 @media (min-width: 768px) {
-  .projects_anchorWrapper {
-    padding-top: 0px;
-  }
   .projects_anchorTitle {
-    font-size: 5em;
+    font-size: 3.5em;
   }
 }
 
-@media (min-width: 992px) {
-  .projects_anchorWrapper {
-    padding-top: 100px;
-  }
+@media (min-width: 1024px) {
   .projects_anchorTitle {
-    font-size: 5em;
+    font-size: 4.3em;
   }
 }
 
 @media (min-width: 1280px) {
-  .projects_anchorTitle {
-    padding-bottom: 50px;
-  }
   .projects_wrapper {
     padding-top: 0px;
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width :1440px) {
   .projects_anchorWrapper {
-    height: 100vh;
-    padding-top: 80px;
-    padding-bottom: 200px;
-  }
-  .projects_anchorTitle {
-    font-size: 6em;
+    padding-bottom: 120px;
   }
 }
 
-@media (min-width: 2560px) {
-  .projects_titleWrapper {
-  padding-bottom: 200px;
-  }
-  
-}
-@media (min-width: 3840px) {
-  .projects_wrapper {
-    padding-top: 300px;
-  }
+@media (min-width :1920px) {
   .projects_anchorWrapper {
-    padding-bottom: 600px;
+    padding-bottom: 200px;
+  }
+  .projects_anchorTitle {
+    font-size: 5em;
+  }
+}
+
+@media (min-width :2560px) {
+  .projects_anchorTitle {
+    font-size: 6em;
+  }
+  .projects_titleWrapper {
+    padding-bottom: 200px;
   }
 }

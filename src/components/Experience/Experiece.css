@@ -1,10 +1,14 @@
 .experience_wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 120px 100px 0px 50px;
-  height: 100vh;
-  font-size: 30px;
+  padding-top: 10%;
   color: #0effea;
+}
+
+.experience_InfoWrapper {
+  padding: 0px 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .experience_titleWrapper {
@@ -16,7 +20,6 @@
 
 .experience_anchorTitle {
   color: #0effea;
-  font-size: 70px;
 }
 
 .experience_paragraph {
@@ -25,95 +28,83 @@
 
 .experience_title {
   color: #fafafa;
-  font-size: 50px;
+  font-size: 1.7em;
   padding-bottom: 30px;
 }
 
-@media (min-width: 360px) {
-  .experience_wrapper {
-    padding: 80px 30px 0px 10px;
-  }
-  .experience_titleWrapper {
-    text-align: center;
-  }
+.experience_wrapper {
+  padding-top: 10%;
+  font-size: 2em;
+  color: #0effea;
+}
+
+@media (min-width: 320px) {
   .experience_anchorTitle {
-    font-size: 2em;
+    font-size: 1.2em;
   }
-  .experience_paragraph {
-    padding: 30px 10px;
-    text-align: center;
+  .experience_InfoWrapper {
+    font-size: 0.5em;
   }
 }
 
 @media (min-width: 768px) {
+  .experience_anchorTitle {
+    font-size: 1.8em;
+  }
+}
+
+@media(min-width:1024px) {
+  .experience_anchorTitle {
+    font-size: 2.3em;
+  }
+  .experience_InfoWrapper {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 1280px) {
   .experience_wrapper {
-    padding-top: 250px;
+    padding-top: 5%;
+    color: #0effea;
   }
   .experience_anchorTitle {
-    font-size: 3em;
+    font-size: 2.5em
+  }
+  .experience_wrapper {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width :1440px) {
+  .experience_wrapper {
+    padding-bottom: 120px;
+  }
+}
+
+@media (min-width :1920px) {
+  .experience_wrapper {
+    padding-top: 7%;
+    font-size: 1.6em;
   }
   .experience_paragraph {
-    text-align: left;
-    padding: 20px 15px 0px 50px;
+    padding: 50px 40px;
   }
-}
-
-@media (min-width: 992px) {
-  .experience_wrapper {
-    padding-top: 100px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .experience_titleWrapper {
-    padding-bottom: 150px;
-  }
-}
-
-@media(min-width:1280px) {
-  .experience_titleWrapper {
-    font-size: 1em;
-    padding-bottom: 50px;
+  .experience_InfoWrapper {
+    padding: 0px 50px;
   }
   .experience_title {
-    font-size: 30px;
-  }
-  .experience_wrapper {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .experience_anchorTitle {
-    font-size: 3em;
-  }
-  .experience_wrapper {
-    padding-top: 100px;
-    font-size: 30px;
-  }
-  .experience_titleWrapper {
-    padding-bottom: 150px;
-  }
-  .experience_title {
-    font-size: 40px;
-  }
-}
-
-@media (min-width: 2560px) {
-  .experience_wrapper {
-    padding-top: 200px;
-  }
-}
-
-@media (min-width: 3840px) {
-  .experience_anchorTitle {
-    font-size: 4.5em;
-  }
-  .experience_title {
-    font-size: 1.9em;
-  }
-  .experience_paragraph {
     font-size: 1.7em;
-    padding: 100px 150px;
+  }
+}
+
+@media (min-width :2560px) {
+  .experience_wrapper {
+    font-size: 2em;
+  }
+  .experience_title {
+    font-size: 2em;
+  }
+  .experience_paragraph {
+    font-size: 1.2em;
   }
 }

@@ -13,26 +13,53 @@ const Projects = () => {
   };
 
   return (
-
-    <div className="projects_anchorWrapper" id='projects'>
+    <div className="projects_anchorWrapper" id="projects">
       <div className="projects_titleWrapper">
         <p className="projects_anchorTitle">Projects</p>
       </div>
       <div className="projects_wrapper">
+        <Project
+          glitchTime={"4s"}
+          title="Social-network"
+          link={"https://breeab-3218f.firebaseapp.com/signin"}
+          code={"https://github.com/cyChopp/Breeab"}
+          image={social}
+          technologies={[
+            "React",
+            "React-Redux",
+            "Hooks",
+            "Hocs",
+            "Firebase",
+            "Flux",
+          ]}
+        />
 
-      <Parallax className="custom-class" y={[-10, 10]} tagOuter="figure">
-        <Project glitchTime={'4s'} title="Social-network" link={'https://breeab-3218f.firebaseapp.com/signin'} code={'https://github.com/cyChopp/Breeab'} image={social} technologies={['React','React-Redux','Hooks','Hocs','Firebase','Flux','Material Ui',]} />
-        </Parallax>
+        <Project
+          glitchTime={"7s"}
+          title="E-commerce shop"
+          link={"https://online-shop-3cfcd.web.app/"}
+          code={"https://github.com/cyChopp/online-shop"}
+          image={shop}
+          technologies={[
+            "React",
+            "React Context",
+            "Hooks",
+            "Commerce.js",
+            "Material Ui",
+          ]}
+        />
 
-        <Project  glitchTime={'7s'} title="E-commerce shop" link={'https://online-shop-3cfcd.web.app/'} code={'https://github.com/cyChopp/online-shop'} image={shop} technologies={['React','React Context','Hooks','Commerce.js','Material Ui']}/>
-
-        <Parallax className="custom-class" y={[10, -10]} tagOuter="figure">
-        <Project  glitchTime={'9s'} title="Galaxy-todo" link={'https://galaxy-todo.web.app/'} code={'https://github.com/cyChopp/another-one'} onClick={MyComponent} image={todo} technologies={['React','Context','Hooks','Reducers','Firebase']}/>
-        </Parallax>
-
+        <Project
+          glitchTime={"9s"}
+          title="Galaxy-todo"
+          link={"https://galaxy-todo.web.app/"}
+          code={"https://github.com/cyChopp/another-one"}
+          onClick={MyComponent}
+          image={todo}
+          technologies={["React", "Context", "Hooks", "Reducers", "Firebase"]}
+        />
       </div>
     </div>
-
   );
 };
 

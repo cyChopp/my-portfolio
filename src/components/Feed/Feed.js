@@ -40,11 +40,10 @@ const Feed = () => {
             </GlitchClip>
           </div>
         </div>
-
-        <div className="feed_role">
+      </div>
+      <div className="feed_role">
           <p>Web Developer</p>
         </div>
-      </div>
 
       <div className="icon-scroll"></div>
     </div>

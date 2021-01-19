@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as emailjs from "emailjs-com";
 import "./ContactMe.css";
 import {
@@ -92,6 +92,13 @@ const ModefiedButton = withStyles({
 const ContactMe = () => {
   const classes = useStyles();
 
+
+  const [name,setName] = useState('')
+  const [subject,setSubject] = useState('')
+  const [email,setEmail] = useState('')
+  const [message,setMessage] = useState('')
+
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -174,17 +181,21 @@ const ContactMe = () => {
                 <Grid container spacing={4}>
                   <Grid item xs={12}>
                     <ValidationTextField
+                    value={name}
+                    onChange={e=>setName(e.target.value)}
                       variant="outlined"
                       autoComplete="fname"
                       name="name"
                       required
                       fullWidth
-                      id="firstName"
-                      label="First Name"
+                      id="Name"
+                      label="Name"
                     />
                   </Grid>
                   <Grid item xs={12}>
                     <ValidationTextField
+                     value={subject}
+                     onChange={e=>setSubject(e.target.value)}
                       variant="outlined"
                       required
                       fullWidth
@@ -196,6 +207,8 @@ const ContactMe = () => {
                   </Grid>
                   <Grid item xs={12}>
                     <ValidationTextField
+                     value={email}
+                     onChange={e=>setEmail(e.target.value)}
                       variant="outlined"
                       required
                       fullWidth
@@ -208,6 +221,8 @@ const ContactMe = () => {
                   </Grid>
                   <Grid item xs={12}>
                     <ValidationTextField
+                     value={message}
+                     onChange={e=>setMessage(e.target.value)}
                       multiline
                       rows={4}
                       variant="outlined"

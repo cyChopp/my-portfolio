@@ -45,14 +45,14 @@ function App() {
       ) : (
         <div className='app_feed'>
           <div className="app_background">
-            <ParallaxProvider>
+            {/* <ParallaxProvider> */}
               <NavBar />
               <Feed />
               <Skills />
               <Projects />
               <Experience />
               <ContactMe />
-            </ParallaxProvider>
+            {/* </ParallaxProvider> */}
           </div>
           <div className="app_topScroll">
             <ScrollUpButton

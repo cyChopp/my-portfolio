@@ -3,8 +3,7 @@
 }
 
 .project_root {
-    max-width: 450px;
-    /* height: 750px; */
+    width: 450px;
     background-color: #0affec !important;
     border-radius: 0px;
     cursor: default !important;
@@ -14,9 +13,9 @@
 
 .project_cart {
     margin: 0px 10px !important;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     font-family: 'Geo' !important;
-    font-size: 25px !important;
+    /* font-size: 25px !important; */
     cursor: default !important;
     text-align: center;
     cursor: pointer;
@@ -46,7 +45,37 @@
     border-radius: 0px !important;
 }
 
+@media (min-width: 320px) {
+    .project_title {
+        font-size: 25px !important;
+    }
+    .project_media {
+        height: 150px !important;
+    }
+    .project_root {
+        height: 430px;
+    }
+}
+
+@media (min-width: 375px) {
+    .project_cart {
+        font-size: 1.3em !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .project_media {
+        height: 200px !important;
+    }
+}
+
 @media(min-width:1024px) {
+    .project_root {
+        height: 500px !important;
+    }
+    .project_cart {
+        font-size: 1.8em !important;
+    }
     .project_rootWrapper {
         padding: 50px 200px;
     }
@@ -67,5 +96,22 @@
     .project_root {
         max-width: 400px;
         height: 500px;
+    }
+}
+
+@media(min-width:1920px) {
+    .project_cart {
+        font-size: 2.2em !important;
+    }
+}
+
+@media (min-width :2560px) {
+    .project_rootWrapper {
+        padding: 50px 0px;
+        height: 700px;
+        width: 500px;
+    }
+    .project_media {
+        height: 250px !important;
     }
 }
