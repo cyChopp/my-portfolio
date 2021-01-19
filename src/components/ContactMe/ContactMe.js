@@ -113,6 +113,10 @@ const ContactMe = () => {
         (result) => {
           console.log(result.text, "success");
           swal("Good job!", "Your email was sent successfully to Alexander!", "success");
+          setName('')
+          setSubject('')
+          setEmail('')
+          setMessage('')
         },
         (error) => {
           console.log(error.text, "error");
