@@ -32,7 +32,7 @@ const Project = ({ title, link, code, image, technologies, glitchTime }) => {
   return (
     <div className="project_rootWrapper">
       <Card className="project_root" >
-        <CardActionArea>
+        <CardActionArea className='project__projectInfo' disableTouchRipple='true'>
 
           <CardMedia
             className="project_media"

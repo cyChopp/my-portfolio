@@ -10,6 +10,8 @@ h1 {
   animation: fade-in 2s;
   display: flex;
   flex-direction: column;
+  cursor: default;
+
 
 }
 
@@ -44,6 +46,7 @@ h1 {
 .feed_numberSpaceBetween {
   padding: 0px 50px;
 }
+
 
 .objectAnimationUp {
   animation: MoveUpDown 3s linear infinite;

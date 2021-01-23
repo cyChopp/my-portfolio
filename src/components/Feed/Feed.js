@@ -6,6 +6,7 @@ import "./ScrollAnimation.css";
 import { styled } from "@material-ui/core";
 
 import GlitchClip from "react-glitch-effect/core/Clip";
+import { Link } from "react-scroll";
 
 
 const Feed = () => {
@@ -45,7 +46,7 @@ const Feed = () => {
           <p>Web Developer</p>
         </div>
 
-      <div className="icon-scroll"></div>
+        <Link  activeClass="active" to="skills" spy={true} smooth={true} duration={1000}> <div className="icon-scroll"> </div></Link>
     </div>
   );
 };

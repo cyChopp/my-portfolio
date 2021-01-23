@@ -4,6 +4,7 @@
  
     position: absolute;
     left: 50%;
+    cursor: pointer;
   }
   .icon-scroll {
     width: 30px;

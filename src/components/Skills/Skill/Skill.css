@@ -13,6 +13,7 @@
 .skill_title {
   font-family: "Geo";
   color: #0affec;
+
 }
 @media (min-width: 320px) { 
   .skill_wrapper {

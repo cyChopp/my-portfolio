@@ -6,6 +6,8 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  cursor: default;
+
 }
 
 .projects_anchorTitle {
@@ -21,6 +23,10 @@
   flex-basis: 100%;
   padding-top: 100px;
 }
+.project__projectInfo{
+  cursor: default !important;
+}
+
 
 @media (min-width: 320px) {
   .projects_anchorTitle {
